@@ -1,0 +1,100 @@
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import { FaStar, FaQuoteLeft } from 'react-icons/fa'
+
+const testimonials = [
+    {
+        name: 'Aditya Kale',
+        role: 'Member since 2023',
+        text: 'Royal Fitness completely changed my lifestyle. The trainers are incredibly knowledgeable and the gym has world-class equipment. I have lost 15 kgs in just 4 months!',
+        rating: 5,
+        img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80',
+    },
+    {
+        name: 'Meera Joshi',
+        role: 'Member since 2022',
+        text: 'The best gym in Wagholi hands down. Clean facilities, amazing trainers, and a motivating atmosphere. I love the Zumba classes — they are so much fun!',
+        rating: 5,
+        img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80',
+    },
+    {
+        name: 'Suresh Pawar',
+        role: 'Member since 2024',
+        text: 'I joined as a complete beginner and the trainers made me feel so welcome. The personal training sessions are worth every penny. Highly recommended!',
+        rating: 5,
+        img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80',
+    },
+    {
+        name: 'Pooja Desai',
+        role: 'Member since 2023',
+        text: 'Great gym with amazing vibes! The diet guidance helped me reach my goals faster. The Pro membership plan gives incredible value for money.',
+        rating: 4,
+        img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80',
+    },
+]
+
+const fadeUp = (delay = 0) => ({
+    initial: { opacity: 0, y: 30 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.7, delay, ease: [0.25, 0.46, 0.45, 0.94] },
+})
+
+export default function Testimonials() {
+    const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 })
+
+    return (
+        <section className="py-28 lg:py-36 relative" ref={ref}>
+            <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
+                <motion.div
+                    {...fadeUp()}
+                    animate={inView ? fadeUp().animate : {}}
+                    className="text-center mb-16"
+                >
+                    <span className="text-accent text-[11px] font-bold tracking-[0.25em] uppercase">
+                        Testimonials
+                    </span>
+                    <h2 className="font-montserrat font-extrabold text-3xl sm:text-4xl lg:text-[3.25rem] mt-5 mb-7 leading-tight tracking-tight">
+                        What Our Members <span className="gradient-text">Say</span>
+                    </h2>
+                </motion.div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
+                    {testimonials.map((t, i) => (
+                        <motion.div
+                            key={t.name}
+                            {...fadeUp(0.08 + 0.08 * i)}
+                            animate={inView ? fadeUp(0.08 + 0.08 * i).animate : {}}
+                            className="group premium-card glow-hover p-8 lg:p-9 relative"
+                        >
+                            <FaQuoteLeft className="absolute top-7 right-7 text-accent/[0.06] text-5xl" />
+                            <div className="relative z-10">
+                                <div className="flex items-center gap-1 mb-5">
+                                    {[...Array(5)].map((_, j) => (
+                                        <FaStar
+                                            key={j}
+                                            className={`text-sm ${j < t.rating ? 'text-yellow-400' : 'text-gray-700'}`}
+                                        />
+                                    ))}
+                                </div>
+                                <p className="text-text-muted leading-[1.8] mb-7 text-[13.5px] font-light">
+                                    &ldquo;{t.text}&rdquo;
+                                </p>
+                                <div className="flex items-center gap-4">
+                                    <img
+                                        src={t.img}
+                                        alt={t.name}
+                                        className="w-11 h-11 rounded-full object-cover ring-2 ring-accent/20"
+                                    />
+                                    <div>
+                                        <h4 className="font-montserrat font-semibold text-sm tracking-tight">{t.name}</h4>
+                                        <p className="text-text-dim text-[11px] uppercase tracking-[0.1em]">{t.role}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </motion.div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    )
+}
