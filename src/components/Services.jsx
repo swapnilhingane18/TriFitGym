@@ -1,0 +1,95 @@
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import {
+    GiWeightLiftingUp,
+    GiMuscleUp,
+    GiRunningShoe,
+    GiMeal,
+} from 'react-icons/gi'
+import { FaUserFriends } from 'react-icons/fa'
+
+const services = [
+    {
+        icon: GiWeightLiftingUp,
+        title: 'Strength Training',
+        desc: 'Build raw strength with scientifically designed programs and premium equipment.',
+    },
+    {
+        icon: FaUserFriends,
+        title: 'Personal Training',
+        desc: 'One-on-one sessions with certified trainers who craft custom plans for your goals.',
+    },
+    {
+        icon: GiRunningShoe,
+        title: 'Fat Loss Programs',
+        desc: 'Intensive cardio and HIIT programs designed to burn fat and boost metabolism.',
+    },
+    {
+        icon: GiMuscleUp,
+        title: 'Muscle Building',
+        desc: 'Progressive overload programs to build lean muscle with proper form guidance.',
+    },
+    {
+        icon: GiMeal,
+        title: 'Diet Guidance',
+        desc: 'Personalized nutrition plans and counseling to fuel your fitness journey.',
+    },
+]
+
+const fadeUp = (delay = 0) => ({
+    initial: { opacity: 0, y: 30 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.7, delay, ease: [0.25, 0.46, 0.45, 0.94] },
+})
+
+export default function Services() {
+    const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.08 })
+
+    return (
+        <section id="services" className="py-28 lg:py-36 relative" ref={ref}>
+            <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+                {/* Header */}
+                <motion.div
+                    {...fadeUp()}
+                    animate={inView ? fadeUp().animate : {}}
+                    className="text-center mb-16"
+                >
+                    <span className="text-accent text-[11px] font-bold tracking-[0.25em] uppercase">
+                        What We Offer
+                    </span>
+                    <h2 className="font-montserrat font-extrabold text-3xl sm:text-4xl lg:text-[3.25rem] mt-5 mb-7 leading-tight tracking-tight">
+                        Our <span className="gradient-text">Programs</span>
+                    </h2>
+                    <p className="max-w-2xl mx-auto text-text-muted text-base lg:text-lg font-light">
+                        Comprehensive fitness programs to reach your peak performance,
+                        no matter your experience level.
+                    </p>
+                </motion.div>
+
+                {/* Cards Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+                    {services.map((service, i) => (
+                        <motion.div
+                            key={service.title}
+                            {...fadeUp(0.1 + 0.08 * i)}
+                            animate={inView ? fadeUp(0.1 + 0.08 * i).animate : {}}
+                            className="group premium-card glow-hover p-8 lg:p-9"
+                        >
+                            <div className="relative z-10">
+                                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent/[0.08] text-accent mb-7 group-hover:bg-accent group-hover:text-white transition-all duration-500 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-accent/20">
+                                    <service.icon className="text-[1.75rem]" />
+                                </div>
+                                <h3 className="font-montserrat font-bold text-lg mb-3 group-hover:text-accent transition-colors duration-400 tracking-tight">
+                                    {service.title}
+                                </h3>
+                                <p className="text-text-muted leading-relaxed text-[13px] font-light">
+                                    {service.desc}
+                                </p>
+                            </div>
+                        </motion.div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    )
+}
