@@ -80,14 +80,14 @@ export default function Pricing() {
                     </p>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-7 items-stretch">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-7 lg:gap-8 items-stretch">
                     {plans.map((plan, i) => (
                         <motion.div
                             key={plan.name}
                             {...fadeUp(0.1 + 0.12 * i)}
                             animate={inView ? fadeUp(0.1 + 0.12 * i).animate : {}}
                             className={`relative group flex flex-col rounded-2xl p-8 lg:p-9 transition-all duration-500 ${plan.popular
-                                    ? 'bg-gradient-to-b from-[#1a1010] to-card border-2 border-accent/40 shadow-2xl shadow-accent/10 scale-[1.03] hover:shadow-3xl hover:shadow-accent/15'
+                                    ? 'bg-gradient-to-b from-[#1a1010] to-card border-2 border-accent/40 shadow-2xl shadow-accent/15 md:scale-[1.05] hover:shadow-[0_0_60px_rgba(255,44,44,0.2)] pricing-popular-glow'
                                     : 'premium-card hover:-translate-y-2'
                                 }`}
                         >

@@ -10,6 +10,8 @@ export default function WhatsAppButton() {
             aria-label="Chat on WhatsApp"
         >
             <div className="relative">
+                {/* Pulse ring */}
+                <span className="absolute inset-[-4px] rounded-full bg-green-500 animate-whatsapp-pulse opacity-0" />
                 {/* Ping */}
                 <span className="absolute inset-0 rounded-full bg-green-500 animate-ping opacity-20" />
                 {/* Button */}

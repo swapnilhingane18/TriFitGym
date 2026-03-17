@@ -58,23 +58,24 @@ export default function Testimonials() {
                     </h2>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-7">
                     {testimonials.map((t, i) => (
                         <motion.div
                             key={t.name}
                             {...fadeUp(0.08 + 0.08 * i)}
                             animate={inView ? fadeUp(0.08 + 0.08 * i).animate : {}}
-                            className="group premium-card glow-hover p-8 lg:p-9 relative"
+                            className="group premium-card glow-hover p-8 lg:p-9 relative hover:scale-[1.02] hover:shadow-2xl hover:shadow-accent/10 transition-all duration-500"
                         >
                             <FaQuoteLeft className="absolute top-7 right-7 text-accent/[0.06] text-5xl" />
                             <div className="relative z-10">
-                                <div className="flex items-center gap-1 mb-5">
+                                <div className="flex items-center gap-1.5 mb-5">
                                     {[...Array(5)].map((_, j) => (
                                         <FaStar
                                             key={j}
-                                            className={`text-sm ${j < t.rating ? 'text-yellow-400' : 'text-gray-700'}`}
+                                            className={`text-[15px] ${j < t.rating ? 'text-yellow-400 drop-shadow-[0_0_4px_rgba(250,204,21,0.4)]' : 'text-gray-700'}`}
                                         />
                                     ))}
+                                    <span className="text-text-dim text-xs ml-1 font-medium">{t.rating}.0</span>
                                 </div>
                                 <p className="text-text-muted leading-[1.8] mb-7 text-[13.5px] font-light">
                                     &ldquo;{t.text}&rdquo;
