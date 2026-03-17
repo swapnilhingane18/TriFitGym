@@ -23,7 +23,7 @@ export default function Hero() {
                     className="absolute inset-0"
                     style={{
                         background:
-                            'linear-gradient(to bottom, rgba(10,10,10,0.7) 0%, rgba(10,10,10,0.6) 40%, rgba(10,10,10,0.92) 100%)',
+                            'linear-gradient(to bottom, rgba(10,10,10,0.82) 0%, rgba(10,10,10,0.72) 40%, rgba(10,10,10,0.95) 100%)',
                     }}
                 />
             </div>
@@ -60,6 +60,15 @@ export default function Hero() {
                 </motion.h1>
 
                 <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.9, delay: 0.22, ease: [0.25, 0.46, 0.45, 0.94] }}
+                    className="text-accent/90 font-semibold text-sm sm:text-base tracking-wide uppercase mb-4"
+                >
+                    Join 1000+ Members Transforming Their Body in Wagholi
+                </motion.p>
+
+                <motion.p
                     initial={{ opacity: 0, y: 25 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.9, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
@@ -81,7 +90,7 @@ export default function Hero() {
                         onClick={() => handleScroll('#pricing')}
                         className="group px-9 py-4 bg-gradient-to-r from-accent to-red-800 text-white font-bold rounded-xl text-base hover:shadow-2xl hover:shadow-accent/25 transition-all duration-500 hover:scale-[1.04] active:scale-[0.98] flex items-center gap-2.5 uppercase tracking-wide text-sm"
                     >
-                        Start Your Transformation
+                        Get Free Trial
                         <FaPlay className="text-[10px] group-hover:translate-x-1 transition-transform duration-300" />
                     </button>
                     <button
