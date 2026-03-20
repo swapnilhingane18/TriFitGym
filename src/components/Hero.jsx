@@ -16,14 +16,14 @@ export default function Hero() {
             <div className="absolute inset-0">
                 <img
                     src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80"
-                    alt="Royal Fitness Gym Interior"
+                    alt="TRIFIT Fitness Centre Interior"
                     className="w-full h-full object-cover scale-105"
                 />
                 <div
-                    className="absolute inset-0"
+                    className="absolute inset-0 backdrop-blur-[2px]"
                     style={{
                         background:
-                            'linear-gradient(to bottom, rgba(10,10,10,0.82) 0%, rgba(10,10,10,0.72) 40%, rgba(10,10,10,0.95) 100%)',
+                            'radial-gradient(circle at center, rgba(10,10,10,0.6) 0%, rgba(10,10,10,0.98) 100%)',
                     }}
                 />
             </div>
@@ -43,7 +43,7 @@ export default function Hero() {
                         Wagholi&apos;s #1 Fitness Center
                     </span>
                     <div className="text-white hover:text-accent font-semibold text-xs sm:text-sm tracking-wide uppercase mb-5 sm:mb-8 animate-pulse">
-                        <span className="bg-accent/20 px-3 py-1 rounded-full border border-accent/30 shadow-[0_0_15px_rgba(255,44,44,0.3)]">🔥 Limited Offer – Free Trial Available</span>
+                        <span className="bg-accent/20 px-3 py-1 rounded-full border border-accent/30 shadow-[0_0_15px_rgba(0,198,255,0.3)]">🔥 Limited Offer – Free Trial Available</span>
                     </div>
                 </motion.div>
 
@@ -54,32 +54,30 @@ export default function Hero() {
                     className="font-montserrat font-black text-[1.85rem] sm:text-[2.5rem] md:text-6xl lg:text-[5.5rem] leading-[1.1] mb-4 sm:mb-7 tracking-tight"
                     style={{
                         textShadow:
-                            '0 0 60px rgba(255, 44, 44, 0.2), 0 0 120px rgba(255, 44, 44, 0.08)',
+                            '0 0 60px rgba(0, 198, 255, 0.2), 0 0 120px rgba(0, 198, 255, 0.08)',
                     }}
                 >
-                    Transform Your Body
+                    Train in Wagholi’s Most
                     <br />
-                    <span className="gradient-text">at Royal Fitness Gym</span>
+                    <span className="text-accent">Premium</span> <span className="text-[#FACC15]">Fitness Space</span>
                 </motion.h1>
 
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.9, delay: 0.22, ease: [0.25, 0.46, 0.45, 0.94] }}
-                    className="text-accent/90 font-semibold text-xs sm:text-sm tracking-wide uppercase mb-3 sm:mb-4"
+                    className="text-[#E5E7EB] font-semibold text-xs sm:text-sm tracking-wide uppercase mb-3 sm:mb-4 drop-shadow-md"
                 >
-                    Join 1000+ Members in Wagholi
+                    ⭐ 4.7 Rated | Join 1000+ members already training at TRIFIT
                 </motion.p>
 
                 <motion.p
                     initial={{ opacity: 0, y: 25 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.9, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
-                    className="max-w-2xl mx-auto text-text-muted text-sm sm:text-base md:text-lg mb-6 sm:mb-10 leading-relaxed font-light"
+                    className="max-w-2xl mx-auto text-text-muted text-base sm:text-lg md:text-xl mb-6 sm:mb-10 leading-relaxed font-medium drop-shadow-sm"
                 >
-                    Wagholi&apos;s most trusted fitness destination. World-class equipment,
-                    certified expert trainers, and results-driven programs designed to
-                    unlock your full potential.
+                    Transform your body. Build confidence. Train like never before.
                 </motion.p>
 
                 {/* CTA Buttons */}
@@ -87,66 +85,34 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 25 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.9, delay: 0.45, ease: [0.25, 0.46, 0.45, 0.94] }}
-                    className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full max-w-md sm:max-w-none mx-auto"
+                    className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5 w-full max-w-md sm:max-w-none mx-auto mb-6"
                 >
                     <button
                         onClick={() => handleScroll('#pricing')}
-                        className="group w-full sm:w-auto px-9 py-4 min-h-[52px] bg-gradient-to-r from-accent to-red-800 text-white font-bold rounded-xl hover:shadow-2xl hover:shadow-accent/25 transition-all duration-500 hover:scale-[1.04] active:scale-[0.97] flex items-center justify-center gap-2.5 uppercase tracking-wide text-[13px]"
+                        className="group w-full sm:w-auto px-10 py-4 sm:py-5 min-h-[52px] bg-gradient-to-r from-accent to-[#0088cc] text-white font-black rounded-xl shadow-[0_0_20px_rgba(0,198,255,0.4)] hover:shadow-[0_0_35px_rgba(0,198,255,0.8)] transition-all duration-300 hover:scale-[1.05] active:scale-[0.97] flex items-center justify-center gap-3 uppercase tracking-wider text-[14px]"
                     >
-                        Get Free Trial
-                        <FaPlay className="text-[10px] group-hover:translate-x-1 transition-transform duration-300" />
+                        Book Free Trial
+                        <FaPlay className="text-[11px] group-hover:translate-x-1.5 transition-transform duration-300" />
                     </button>
                     <button
                         onClick={() => handleScroll('#pricing')}
-                        className="w-full sm:w-auto px-9 py-4 min-h-[52px] border border-white/15 text-white font-semibold rounded-xl text-[13px] hover:bg-white/[0.06] hover:border-white/25 transition-all duration-500 backdrop-blur-sm uppercase tracking-wide active:scale-[0.97]"
+                        className="w-full sm:w-auto px-9 py-4 sm:py-5 min-h-[52px] border border-white/10 text-white/70 font-semibold rounded-xl text-[13px] hover:bg-white/[0.05] hover:text-white transition-all duration-300 uppercase tracking-wide active:scale-[0.97]"
                     >
-                        Explore Plans
+                        Explore Membership
                     </button>
                 </motion.div>
 
-                {/* Trust Badges */}
-                <motion.div
+                <motion.p
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ duration: 1, delay: 0.7 }}
-                    className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 mt-6 sm:mt-10"
+                    transition={{ duration: 0.9, delay: 0.6 }}
+                    className="text-[#FACC15] text-xs sm:text-sm font-semibold tracking-wide"
                 >
-                    {['Certified Trainers', 'Modern Equipment', 'Beginner Friendly'].map(
-                        (badge) => (
-                            <div
-                                key={badge}
-                                className="flex items-center gap-1.5 text-text-muted/80 text-[11px] sm:text-[13px] font-medium"
-                            >
-                                <FaCheckCircle className="text-accent/70 text-xs" />
-                                <span>{badge}</span>
-                            </div>
-                        )
-                    )}
-                </motion.div>
+                    ⚡ Limited slots available this week
+                </motion.p>
 
-                {/* Stats */}
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.9 }}
-                    className="mt-10 sm:mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 max-w-3xl mx-auto pb-16 md:pb-0"
-                >
-                    {[
-                        { value: '5+', label: 'Years' },
-                        { value: '1000+', label: 'Members' },
-                        { value: '20+', label: 'Trainers' },
-                        { value: '4.7★', label: 'Rating' },
-                    ].map((stat) => (
-                        <div key={stat.label} className="text-center">
-                            <div className="font-montserrat font-extrabold text-2xl sm:text-3xl md:text-4xl text-white tracking-tight">
-                                {stat.value}
-                            </div>
-                            <div className="text-text-dim text-xs mt-1.5 uppercase tracking-[0.15em] font-medium">
-                                {stat.label}
-                            </div>
-                        </div>
-                    ))}
-                </motion.div>
+                {/* Space maintained for TrustBar below */}
+                <div className="pb-16 md:pb-0" />
             </div>
 
             {/* Scroll indicator */}
