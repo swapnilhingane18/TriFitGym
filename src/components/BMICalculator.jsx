@@ -31,7 +31,7 @@ export default function BMICalculator() {
     return (
         <section className="py-8 md:py-12 relative ambient-glow" ref={ref}>
             <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
-                <motion.div {...fadeUp()} animate={inView ? fadeUp().animate : {}} className="text-center mb-10 sm:mb-16">
+                <motion.div {...fadeUp()} animate={inView ? fadeUp().animate : {}} className="text-center mb-6 md:mb-10 sm:mb-8 md:mb-12">
                     <span className="text-accent text-[11px] font-bold tracking-[0.25em] uppercase">Health Check</span>
                     <h2 className="font-montserrat font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-[3.25rem] mt-5 mb-7 leading-tight tracking-tight">BMI <span className="gradient-text">Calculator</span></h2>
                     <p className="max-w-2xl mx-auto text-text-muted text-base lg:text-lg font-light">Check your BMI and find the right TRIFIT program for you.</p>

@@ -25,7 +25,7 @@ export default function Contact() {
                 <motion.div
                     {...fadeUp()}
                     animate={inView ? fadeUp().animate : {}}
-                    className="text-center mb-10 sm:mb-16"
+                    className="text-center mb-6 md:mb-10 sm:mb-8 md:mb-12"
                 >
                     <span className="text-accent text-[11px] font-bold tracking-[0.25em] uppercase">
                         Contact Us

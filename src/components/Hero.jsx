@@ -11,7 +11,7 @@ export default function Hero() {
     return (
         <section
             id="home"
-            className="relative min-h-screen flex items-center justify-center overflow-hidden"
+            className="relative pt-24 pb-16 md:py-32 flex items-center justify-center overflow-hidden"
         >
             {/* Background */}
             <div className="absolute inset-0">
@@ -54,7 +54,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 35 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.9, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
-                    className="font-montserrat font-black text-[1.85rem] sm:text-[2.5rem] md:text-6xl lg:text-[5.5rem] leading-[1.1] mb-4 sm:mb-7 tracking-tight"
+                    className="font-montserrat font-black text-[2rem] leading-[1.15] sm:text-[2.5rem] md:text-6xl lg:text-[5.5rem] md:leading-[1.1] mb-2 sm:mb-4 tracking-tight"
                     style={{
                         textShadow:
                             '0 0 60px rgba(0, 198, 255, 0.2), 0 0 120px rgba(0, 198, 255, 0.08)',
@@ -78,7 +78,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 25 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.9, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
-                    className="max-w-2xl mx-auto text-text-muted text-base sm:text-lg md:text-[1.15rem] mb-6 sm:mb-10 leading-relaxed font-medium drop-shadow-sm"
+                    className="max-w-2xl mx-auto text-text-muted text-[15px] sm:text-lg md:text-[1.15rem] mb-6 sm:mb-6 md:mb-10 leading-relaxed font-medium drop-shadow-sm"
                 >
                     This isn&apos;t just a gym. This is where your transformation begins.
                 </motion.p>
@@ -88,21 +88,21 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 25 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.9, delay: 0.45, ease: [0.25, 0.46, 0.45, 0.94] }}
-                    className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5 w-full max-w-md sm:max-w-none mx-auto mb-6"
+                    className="flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-5 w-full max-w-[280px] sm:max-w-none mx-auto mb-4"
                 >
                     <button
                         onClick={() => {
                             handleScroll('#pricing');
                             trackLeadEvent('free_trial_click', { location: 'hero' });
                         }}
-                        className="group w-full sm:w-auto px-10 py-4 sm:py-5 min-h-[52px] bg-gradient-to-r from-accent to-[#0088cc] text-white font-black rounded-xl shadow-[0_0_20px_rgba(0,198,255,0.4)] hover:shadow-[0_0_35px_rgba(0,198,255,0.8)] transition-all duration-300 hover:scale-[1.03] active:scale-[0.97] flex items-center justify-center gap-3 uppercase tracking-wider text-[14px]"
+                        className="group w-full sm:w-auto px-10 py-3.5 min-h-[44px] bg-gradient-to-r from-accent to-[#0088cc] text-white font-black rounded-xl shadow-[0_0_20px_rgba(0,198,255,0.4)] hover:shadow-[0_0_35px_rgba(0,198,255,0.8)] transition-all duration-300 active:scale-[0.96] flex items-center justify-center gap-2 uppercase tracking-wider text-[13px]"
                     >
                         Book Free Trial
-                        <FaPlay className="text-[11px] group-hover:translate-x-1.5 transition-transform duration-300" />
+                        <FaPlay className="text-[10px] group-hover:translate-x-1 transition-transform duration-300" />
                     </button>
                     <button
                         onClick={() => handleScroll('#pricing')}
-                        className="w-full sm:w-auto px-9 py-4 sm:py-5 min-h-[52px] border border-white/10 text-white/70 font-semibold rounded-xl text-[13px] hover:bg-white/[0.05] hover:text-white transition-all duration-300 uppercase tracking-wide active:scale-[0.97]"
+                        className="w-full sm:w-auto px-8 py-3.5 min-h-[44px] border border-white/10 text-white/70 font-bold rounded-xl text-[13px] hover:bg-white/[0.05] hover:text-white transition-all duration-300 uppercase tracking-wide active:scale-[0.96]"
                     >
                         Explore Membership
                     </button>

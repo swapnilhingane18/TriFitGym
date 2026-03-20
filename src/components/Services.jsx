@@ -52,7 +52,7 @@ export default function Services() {
                 <motion.div
                     {...fadeUp()}
                     animate={inView ? fadeUp().animate : {}}
-                    className="text-center mb-10 sm:mb-16"
+                    className="text-center mb-6 md:mb-10 sm:mb-8 md:mb-12"
                 >
                     <span className="text-accent text-[11px] font-bold tracking-[0.25em] uppercase">
                         What We Offer
@@ -67,22 +67,22 @@ export default function Services() {
                 </motion.div>
 
                 {/* Cards Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+                <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 lg:gap-6">
                     {services.map((service, i) => (
                         <motion.div
                             key={service.title}
                             {...fadeUp(0.1 + 0.08 * i)}
                             animate={inView ? fadeUp(0.1 + 0.08 * i).animate : {}}
-                            className="group premium-card glow-hover p-8 lg:p-9"
+                            className="group premium-card glow-hover p-5 md:p-8 lg:p-9"
                         >
-                            <div className="relative z-10">
-                                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent/[0.08] text-accent mb-7 group-hover:bg-accent group-hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-accent/20">
-                                    <service.icon className="text-[1.75rem]" />
+                            <div className="relative z-10 flex flex-col items-center md:items-start text-center md:text-left">
+                                <div className="inline-flex items-center justify-center w-12 h-12 md:w-16 md:h-16 rounded-xl bg-accent/[0.08] text-accent mb-4 md:mb-7 group-hover:bg-accent group-hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-accent/20">
+                                    <service.icon className="text-2xl md:text-[1.75rem]" />
                                 </div>
-                                <h3 className="font-montserrat font-bold text-lg mb-3 group-hover:text-accent transition-colors duration-300 tracking-tight">
+                                <h3 className="font-montserrat font-bold text-sm md:text-lg mb-2 tracking-tight">
                                     {service.title}
                                 </h3>
-                                <p className="text-text-muted leading-relaxed text-[13px] font-light">
+                                <p className="text-text-muted leading-snug md:leading-relaxed text-[11px] md:text-[13px] font-light hidden sm:block">
                                     {service.desc}
                                 </p>
                             </div>

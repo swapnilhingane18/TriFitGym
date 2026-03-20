@@ -6,28 +6,28 @@ const testimonials = [
     {
         name: 'Aditya Kale',
         role: 'Lost 12kg in 5 months',
-        text: 'I was intimidated to start, but TRIFIT changed everything. I lost 12kg in 5 months. The trainers here actually care about your progress.',
+        text: 'I was intimidated to start, but TRIFIT changed everything. I lost 12kg in 5 months.',
         rating: 5,
         img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80',
     },
     {
         name: 'Meera Joshi',
         role: 'Gained muscle & confidence',
-        text: 'This isn\'t just a gym, it\'s a community. From completely sedentary to lifting weights 4x a week. Best decision I made for my mental health.',
+        text: 'From completely sedentary to lifting 4x a week. Best decision I made for my health.',
         rating: 5,
         img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80',
     },
     {
         name: 'Suresh Pawar',
         role: 'Rehab to strength athlete',
-        text: 'The equipment is premium, but the coaching is what makes it. They helped me push past my plateaus safely. Hands down the best in Wagholi.',
+        text: 'They helped me push past my plateaus safely. Hands down the best in Wagholi.',
         rating: 5,
         img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80',
     },
     {
         name: 'Pooja Desai',
         role: 'Lost 8kg & feels amazing',
-        text: 'I lost 8kg in 3 months! The vibe here is so incredibly motivating. You walk in and just instantly want to crush your workout.',
+        text: 'Lost 8kg in 3 months! You walk in and just instantly want to crush your workout.',
         rating: 5,
         img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80',
     },
@@ -48,7 +48,7 @@ export default function Testimonials() {
                 <motion.div
                     {...fadeUp()}
                     animate={inView ? fadeUp().animate : {}}
-                    className="text-center mb-10 sm:mb-16"
+                    className="text-center mb-6 md:mb-10 sm:mb-8 md:mb-12"
                 >
                     <span className="text-accent text-[11px] font-bold tracking-[0.25em] uppercase">
                         Testimonials
@@ -64,7 +64,7 @@ export default function Testimonials() {
                             key={t.name}
                             {...fadeUp(0.08 + 0.08 * i)}
                             animate={inView ? fadeUp(0.08 + 0.08 * i).animate : {}}
-                            className="group glass-panel glow-hover p-8 lg:p-9 relative rounded-2xl hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(0,198,255,0.15)] transition-all duration-300"
+                            className={`group glass-panel glow-hover p-6 md:p-8 lg:p-9 relative rounded-2xl hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(0,198,255,0.15)] transition-all duration-300 ${i >= 2 ? 'hidden md:block' : 'block'}`}
                         >
                             <FaQuoteLeft className="absolute top-7 right-7 text-accent/[0.06] text-5xl" />
                             <div className="relative z-10">

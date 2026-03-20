@@ -38,13 +38,13 @@ const FinalCTA = () => (
             <p className="text-text-muted text-base sm:text-lg mb-8 font-light max-w-xl mx-auto">
                 No matter your starting point, TRIFIT is built for your journey. Join today and start with expert guidance.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center mb-8 md:mb-10 w-full max-w-[280px] sm:max-w-none mx-auto">
                 <button
                     onClick={() => {
                         document.querySelector('#pricing')?.scrollIntoView({ behavior: 'smooth' });
                         trackLeadEvent('free_trial_click', { location: 'final_cta' });
                     }}
-                    className="w-full sm:w-auto px-10 py-4 min-h-[52px] bg-gradient-to-r from-[#00C6FF] to-[#0072ff] text-white font-black rounded-xl shadow-[0_0_20px_rgba(0,198,255,0.4)] hover:shadow-[0_0_35px_rgba(0,198,255,0.8)] transition-all duration-300 hover:scale-[1.03] active:scale-[0.97] uppercase tracking-wider text-[14px] leading-none"
+                    className="w-full sm:w-auto px-10 py-3.5 min-h-[44px] bg-gradient-to-r from-[#00C6FF] to-[#0072ff] text-white font-black rounded-xl shadow-[0_0_20px_rgba(0,198,255,0.4)] hover:shadow-[0_0_35px_rgba(0,198,255,0.8)] transition-all duration-300 active:scale-[0.96] uppercase tracking-wider text-[13px] leading-none"
                 >
                     Book Free Trial
                 </button>
@@ -68,7 +68,7 @@ const FinalCTA = () => (
 
 function App() {
   return (
-    <div className="min-h-screen bg-dark text-text font-poppins overflow-x-hidden pb-16 md:pb-0">
+    <div className="min-h-screen bg-dark text-text font-poppins overflow-x-hidden pb-24 md:pb-0">
       <Navbar />
       <Hero />
       <TrustBar />

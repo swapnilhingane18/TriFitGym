@@ -68,7 +68,7 @@ export default function Pricing() {
                 <motion.div
                     {...fadeUp()}
                     animate={inView ? fadeUp().animate : {}}
-                    className="text-center mb-10 sm:mb-16"
+                    className="text-center mb-6 md:mb-10 sm:mb-8 md:mb-12"
                 >
                     <span className="text-accent text-[11px] font-bold tracking-[0.25em] uppercase">
                         Pricing
@@ -90,8 +90,8 @@ export default function Pricing() {
                             key={plan.name}
                             {...fadeUp(0.1 + 0.12 * i)}
                             animate={inView ? fadeUp(0.1 + 0.12 * i).animate : {}}
-                            className={`relative group flex flex-col rounded-2xl p-8 lg:p-9 transition-all duration-300 glass-panel ${plan.popular
-                                    ? 'border-2 border-[#FACC15] shadow-[0_0_40px_rgba(250,204,21,0.25)] scale-105 md:scale-110 hover:shadow-[0_0_60px_rgba(250,204,21,0.45)] z-20 bg-gradient-to-b from-[#111827] to-[#0A0A0A]'
+                            className={`relative group flex flex-col rounded-2xl p-5 md:p-8 lg:p-9 transition-all duration-300 glass-panel ${plan.popular
+                                    ? 'border-2 border-[#FACC15] shadow-[0_0_40px_rgba(250,204,21,0.25)] scale-[1.02] md:scale-110 hover:shadow-[0_0_60px_rgba(250,204,21,0.45)] z-20 bg-gradient-to-b from-[#111827] to-[#0A0A0A]'
                                     : 'hover:-translate-y-1'
                                 }`}
                         >
@@ -115,7 +115,7 @@ export default function Pricing() {
                                 <span className="text-text-dim text-sm ml-1">{plan.period}</span>
                             </div>
 
-                            <ul className="space-y-3.5 mb-9 flex-1">
+                            <ul className="space-y-2 md:space-y-3.5 mb-6 md:mb-9 flex-1">
                                 {plan.features.map((f) => (
                                     <li key={f} className="flex items-start gap-3 text-[13px]">
                                         <FaCheck className="text-accent mt-[3px] shrink-0 text-[11px]" />
@@ -126,7 +126,7 @@ export default function Pricing() {
 
                             <button
                                 onClick={() => trackLeadEvent('free_trial_click', { location: 'pricing_tier', plan: plan.name })}
-                                className={`w-full py-4 rounded-xl font-black uppercase tracking-wider text-sm transition-all duration-300 hover:scale-[1.03] active:scale-[0.97] ${plan.popular
+                                className={`w-full py-3.5 min-h-[44px] rounded-xl font-black uppercase tracking-wider text-[13px] md:text-sm transition-all duration-300 active:scale-[0.96] ${plan.popular
                                         ? 'bg-[#FACC15] text-[#0A0A0A] hover:bg-white hover:shadow-[0_0_25px_rgba(250,204,21,0.6)]'
                                         : 'bg-white/5 border border-white/10 text-white hover:bg-white/10 hover:border-white/20'
                                     }`}
