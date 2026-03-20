@@ -54,7 +54,7 @@ export default function Navbar() {
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}
                 transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
-                className={`fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 ease-out ${
+                className={`fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 ease-out pt-[env(safe-area-inset-top)] ${
                     scrolled || mobileOpen
                         ? 'bg-dark/80 backdrop-blur-xl shadow-2xl shadow-black/40 border-b border-white/[0.04]'
                         : 'bg-transparent'

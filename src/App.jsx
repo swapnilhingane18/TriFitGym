@@ -52,7 +52,7 @@ const FinalCTA = () => (
                     Book Free Trial
                 </button>
                 <a
-                    href="tel:+919730091331"
+                    href="tel:07219256076"
                     onClick={() => trackLeadEvent('call_click', { location: 'final_cta' })}
                     className="hidden md:flex w-full sm:w-auto px-10 py-4 min-h-[52px] bg-[#111827] border border-[#1F2937] text-white font-black rounded-xl hover:bg-[#1F2937] transition-all duration-300 hover:scale-[1.03] active:scale-[0.97] items-center justify-center gap-3 uppercase tracking-wider text-[14px] leading-none shadow-lg"
                 >
@@ -97,16 +97,15 @@ function App() {
         <Divider />
         <Instagram />
       </div>
-      <Divider />
       <Testimonials />
       <div className="hidden md:block">
         <Divider />
         <BMICalculator />
-        <Divider />
-        <FAQ />
-        <Divider />
-        <Contact />
       </div>
+      <Divider />
+      <FAQ />
+      <Divider />
+      <Contact />
       <FinalCTA />
       <Footer />
       <WhatsAppButton />

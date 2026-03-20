@@ -2,7 +2,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 import { trackLeadEvent } from '../utils/analytics'
 
 export default function WhatsAppButton() {
-    const whatsappUrl = "https://wa.me/919730091331?text=Hi%2C%20I%20want%20to%20book%20a%20free%20trial%20at%20TRIFIT."
+    const whatsappUrl = "https://wa.me/9107219256076?text=Hi%2C%20I%20want%20to%20book%20a%20free%20trial%20at%20TRIFIT."
 
     return (
         <a
@@ -10,7 +10,7 @@ export default function WhatsAppButton() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackLeadEvent('whatsapp_click', { location: 'floating_widget' })}
-            className="fixed bottom-[90px] md:bottom-8 right-5 md:right-8 z-[50] group"
+            className="fixed bottom-20 md:bottom-8 right-5 md:right-8 z-[50] group"
             aria-label="Chat on WhatsApp"
         >
             <div className="relative">

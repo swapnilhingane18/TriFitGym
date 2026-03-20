@@ -4,7 +4,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaWhatsapp } from 'rea
 import { trackLeadEvent } from '../utils/analytics'
 
 const contactInfo = [
-    { icon: FaPhoneAlt, title: 'Phone', value: '+91 97300 91331', link: 'tel:+919730091331' },
+    { icon: FaPhoneAlt, title: 'Phone', value: '07219 256076', link: 'tel:07219256076' },
     { icon: FaMapMarkerAlt, title: 'Address', value: 'Wagholi, Pune, Maharashtra, India', link: 'https://maps.google.com/?q=Wagholi+Pune' },
     { icon: FaClock, title: 'Hours', value: 'Mon-Sat: 5:30 AM - 10:30 PM', link: null },
     { icon: FaEnvelope, title: 'Email', value: 'info@trifit.in', link: 'mailto:info@trifit.in' },
@@ -79,7 +79,7 @@ export default function Contact() {
                                 Walk in for a free tour and fitness assessment today!
                             </p>
                             <a
-                                href="https://wa.me/919730091331?text=Hi%2C%20I%20want%20to%20book%20a%20free%20trial%20at%20TRIFIT."
+                                href="https://wa.me/9107219256076?text=Hi%2C%20I%20want%20to%20book%20a%20free%20trial%20at%20TRIFIT."
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-block px-7 py-3.5 bg-gradient-to-r from-accent to-[#0088cc] text-white font-bold text-[13px] rounded-xl hover:shadow-xl hover:shadow-accent/25 transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] uppercase tracking-wider"
@@ -100,8 +100,8 @@ export default function Contact() {
                         </h3>
                         <div className="rounded-2xl overflow-hidden border border-border shadow-2xl shadow-black/40">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15130.63821817478!2d73.9712066!3d18.5781442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3a557b7f16f%3A0x6d8bffd069f0bd!2sWagholi%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-                                className="w-full h-[300px] sm:h-[400px] md:h-[450px]"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.4839876678334!2d73.99713761077197!3d18.583631082449283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1565d3fe463%3A0x15f74a3d7c3de183!2sTrifit%20-%20The%20Best%20Gym%20in%20Wagholi%20for%20Fitness%2C%20Strength%20Training%2C%20Cardio%2C%20and%20Overall%20Wellness!5e1!3m2!1sen!2sin!4v1774027327857!5m2!1sen!2sin"
+                                className="w-full h-[250px] sm:h-[400px] md:h-[450px]"
                                 style={{ border: 0 }}
                                 allowFullScreen=""
                                 loading="lazy"

@@ -5,10 +5,10 @@ export default function MobileBottomBar() {
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden">
       <div className="bg-dark/90 backdrop-blur-xl border-t border-white/[0.06] shadow-[0_-4px_30px_rgba(0,0,0,0.5)]">
-        <div className="flex items-center justify-between gap-3 px-4 py-3 max-w-lg mx-auto">
+        <div className="flex items-center justify-between gap-3 px-4 sm:px-6 py-3 max-w-lg mx-auto">
           {/* Call Now */}
           <a
-            href="tel:+919730091331"
+            href="tel:07219256076"
             onClick={() => trackLeadEvent('call_click', { location: 'mobile_bar' })}
             className="flex-1 flex items-center justify-center gap-2 py-3.5 glass-panel text-white font-bold text-[13px] uppercase tracking-wider rounded-xl active:scale-[0.96] transition-transform shadow-lg"
           >
