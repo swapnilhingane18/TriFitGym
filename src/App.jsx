@@ -102,11 +102,11 @@ function App() {
         <Divider />
         <BMICalculator />
       </div>
-      <Divider />
-      <FAQ />
+      <FinalCTA />
       <Divider />
       <Contact />
-      <FinalCTA />
+      <Divider />
+      <FAQ />
       <Footer />
       <WhatsAppButton />
       <MobileBottomBar />
