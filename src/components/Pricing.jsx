@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import { trackLeadEvent } from '../utils/analytics'
 import { FaCheck, FaCrown } from 'react-icons/fa'
 
 const plans = [
@@ -124,9 +125,10 @@ export default function Pricing() {
                             </ul>
 
                             <button
-                                className={`w-full py-4 rounded-xl font-bold text-[13px] uppercase tracking-[0.08em] transition-all duration-300 ${plan.popular
-                                        ? 'bg-gradient-to-r from-[#FACC15] to-[#EAB308] text-black hover:shadow-[0_0_25px_rgba(250,204,21,0.5)] hover:scale-[1.03] active:scale-[0.98]'
-                                        : 'bg-white/[0.04] border border-white/10 text-white hover:bg-white/[0.08] hover:border-white/20 hover:shadow-xl active:scale-[0.98]'
+                                onClick={() => trackLeadEvent('free_trial_click', { location: 'pricing_tier', plan: plan.name })}
+                                className={`w-full py-4 rounded-xl font-black uppercase tracking-wider text-sm transition-all duration-300 hover:scale-[1.03] active:scale-[0.97] ${plan.popular
+                                        ? 'bg-[#FACC15] text-[#0A0A0A] hover:bg-white hover:shadow-[0_0_25px_rgba(250,204,21,0.6)]'
+                                        : 'bg-white/5 border border-white/10 text-white hover:bg-white/10 hover:border-white/20'
                                     }`}
                             >
                                 Start Your Transformation

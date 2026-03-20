@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { FaPhone, FaMapMarkerAlt, FaClock, FaEnvelope } from 'react-icons/fa'
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaWhatsapp } from 'react-icons/fa'
+import { trackLeadEvent } from '../utils/analytics'
 
 const contactInfo = [
-    { icon: FaPhone, title: 'Phone', value: '+91 97300 91331', link: 'tel:+919730091331' },
+    { icon: FaPhoneAlt, title: 'Phone', value: '+91 97300 91331', link: 'tel:+919730091331' },
     { icon: FaMapMarkerAlt, title: 'Address', value: 'Wagholi, Pune, Maharashtra, India', link: 'https://maps.google.com/?q=Wagholi+Pune' },
     { icon: FaClock, title: 'Hours', value: 'Mon-Sat: 5:30 AM - 10:30 PM', link: null },
     { icon: FaEnvelope, title: 'Email', value: 'info@trifit.in', link: 'mailto:info@trifit.in' },
@@ -54,6 +55,7 @@ export default function Contact() {
                                     key={item.title}
                                     {...(item.link ? { href: item.link, target: '_blank', rel: 'noopener noreferrer' } : {})}
                                     className="group flex items-center gap-5 premium-card glow-hover p-6 cursor-pointer"
+                                    onClick={item.title === 'Phone' ? () => trackLeadEvent('call_click', { location: 'contact_page' }) : undefined}
                                 >
                                     <div className="relative z-10 shrink-0 w-13 h-13 rounded-xl bg-accent/[0.08] text-accent flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-all duration-300 group-hover:shadow-lg group-hover:shadow-accent/20">
                                         <item.icon className="text-lg" />

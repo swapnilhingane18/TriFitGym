@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { FaPlay, FaArrowDown, FaCheckCircle } from 'react-icons/fa'
+import { trackLeadEvent } from '../utils/analytics'
 
 export default function Hero() {
     const handleScroll = (href) => {
@@ -90,7 +91,10 @@ export default function Hero() {
                     className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5 w-full max-w-md sm:max-w-none mx-auto mb-6"
                 >
                     <button
-                        onClick={() => handleScroll('#pricing')}
+                        onClick={() => {
+                            handleScroll('#pricing');
+                            trackLeadEvent('free_trial_click', { location: 'hero' });
+                        }}
                         className="group w-full sm:w-auto px-10 py-4 sm:py-5 min-h-[52px] bg-gradient-to-r from-accent to-[#0088cc] text-white font-black rounded-xl shadow-[0_0_20px_rgba(0,198,255,0.4)] hover:shadow-[0_0_35px_rgba(0,198,255,0.8)] transition-all duration-300 hover:scale-[1.03] active:scale-[0.97] flex items-center justify-center gap-3 uppercase tracking-wider text-[14px]"
                     >
                         Book Free Trial

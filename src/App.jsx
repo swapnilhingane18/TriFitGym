@@ -16,6 +16,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsAppButton'
 import MobileBottomBar from './components/MobileBottomBar'
+import { trackLeadEvent } from './utils/analytics'
 import FreeTrialPopup from './components/FreeTrialPopup'
 import TrustBar from './components/TrustBar'
 
@@ -39,14 +40,18 @@ const FinalCTA = () => (
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
                 <button
-                    onClick={() => document.querySelector('#pricing')?.scrollIntoView({ behavior: 'smooth' })}
-                    className="w-full sm:w-auto px-10 py-4 sm:py-5 bg-gradient-to-r from-accent to-[#0088cc] text-white font-black rounded-xl shadow-[0_0_20px_rgba(0,198,255,0.4)] hover:shadow-[0_0_35px_rgba(0,198,255,0.8)] transition-all duration-300 hover:scale-[1.03] active:scale-[0.97] uppercase tracking-wider text-[14px]"
+                    onClick={() => {
+                        document.querySelector('#pricing')?.scrollIntoView({ behavior: 'smooth' });
+                        trackLeadEvent('free_trial_click', { location: 'final_cta' });
+                    }}
+                    className="w-full sm:w-auto px-10 py-4 min-h-[52px] bg-gradient-to-r from-[#00C6FF] to-[#0072ff] text-white font-black rounded-xl shadow-[0_0_20px_rgba(0,198,255,0.4)] hover:shadow-[0_0_35px_rgba(0,198,255,0.8)] transition-all duration-300 hover:scale-[1.03] active:scale-[0.97] uppercase tracking-wider text-[14px] leading-none"
                 >
                     Book Free Trial
                 </button>
                 <a
                     href="tel:+919730091331"
-                    className="w-full sm:w-auto px-10 py-4 sm:py-5 border border-white/10 glass-panel text-white font-bold rounded-xl hover:bg-white/[0.08] hover:border-white/20 transition-all duration-300 hover:scale-[1.03] active:scale-[0.97] uppercase tracking-wider text-[14px]"
+                    onClick={() => trackLeadEvent('call_click', { location: 'final_cta' })}
+                    className="w-full sm:w-auto px-10 py-4 min-h-[52px] bg-[#111827] border border-[#1F2937] text-white font-black rounded-xl hover:bg-[#1F2937] transition-all duration-300 hover:scale-[1.03] active:scale-[0.97] flex items-center justify-center gap-3 uppercase tracking-wider text-[14px] leading-none shadow-lg"
                 >
                     Call Now
                 </a>

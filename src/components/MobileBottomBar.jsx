@@ -1,4 +1,5 @@
-import { FaWhatsapp, FaPhoneAlt } from 'react-icons/fa'
+import { FaPhoneAlt, FaCalendarCheck } from 'react-icons/fa'
+import { trackLeadEvent } from '../utils/analytics'
 
 export default function MobileBottomBar() {
   return (
@@ -8,6 +9,7 @@ export default function MobileBottomBar() {
           {/* Call Now */}
           <a
             href="tel:+919730091331"
+            onClick={() => trackLeadEvent('call_click', { location: 'mobile_bar' })}
             className="flex-1 flex items-center justify-center gap-2 py-3.5 glass-panel text-white font-bold text-[13px] uppercase tracking-wider rounded-xl active:scale-[0.96] transition-transform shadow-lg"
           >
             <FaPhoneAlt className="text-sm text-accent" />
@@ -20,6 +22,7 @@ export default function MobileBottomBar() {
             onClick={(e) => {
               e.preventDefault()
               document.querySelector('#pricing')?.scrollIntoView({ behavior: 'smooth' })
+              trackLeadEvent('free_trial_click', { location: 'mobile_bar' });
             }}
             className="flex-1 flex items-center justify-center py-3.5 bg-gradient-to-r from-accent to-[#0088cc] text-white font-bold text-[13px] uppercase tracking-wider rounded-xl hover:shadow-[0_0_15px_rgba(0,198,255,0.4)] active:scale-[0.96] transition-all duration-300"
           >

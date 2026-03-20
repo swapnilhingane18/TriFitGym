@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { HiMenu, HiX } from 'react-icons/hi'
 import { FaDumbbell } from 'react-icons/fa'
+import { trackLeadEvent } from '../utils/analytics'
 
 const navLinks = [
     { name: 'Home', href: '#home' },
@@ -86,13 +87,15 @@ export default function Navbar() {
                                     <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-accent rounded-full group-hover:w-6 transition-all duration-300" />
                                 </a>
                             ))}
-                            <a
-                                href="#pricing"
-                                onClick={(e) => handleClick(e, '#pricing')}
+                            <button
+                                onClick={(e) => {
+                                    handleClick(e, '#pricing');
+                                    trackLeadEvent('free_trial_click', { location: 'navbar' });
+                                }}
                                 className="ml-4 px-7 py-2.5 bg-gradient-to-r from-accent to-[#0088cc] text-white text-[13px] font-bold uppercase tracking-wider rounded-lg hover:shadow-lg hover:shadow-accent/25 transition-all duration-300 hover:scale-[1.03] active:scale-[0.98]"
                             >
                                 Join Now
-                            </a>
+                            </button>
                         </div>
 
                         {/* Mobile Hamburger — icon + text label */}
