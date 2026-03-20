@@ -71,21 +71,28 @@ export default function Contact() {
                         })}
 
                         {/* CTA */}
-                        <div className="bg-gradient-to-br from-accent/15 via-red-950/20 to-card border border-accent/20 rounded-2xl p-7 text-center">
-                            <p className="font-montserrat font-bold text-lg mb-2 tracking-tight">
+                        <div className="bg-white/5 backdrop-blur rounded-xl p-4 mt-10 text-center border border-white/10">
+                            <p className="font-montserrat font-bold text-[15px] sm:text-base mb-3 tracking-tight text-white">
                                 Ready to Start Your Transformation?
                             </p>
-                            <p className="text-text-muted text-[13px] mb-5 font-light">
-                                Walk in for a free tour and fitness assessment today!
-                            </p>
-                            <a
-                                href="https://wa.me/9107219256076?text=Hi%2C%20I%20want%20to%20book%20a%20free%20trial%20at%20TRIFIT."
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-block px-7 py-3.5 bg-gradient-to-r from-accent to-[#0088cc] text-white font-bold text-[13px] rounded-xl hover:shadow-xl hover:shadow-accent/25 transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] uppercase tracking-wider"
-                            >
-                                Message on WhatsApp
-                            </a>
+                            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                                <a
+                                    href="tel:07219256076"
+                                    onClick={() => trackLeadEvent('call_click', { location: 'contact_page' })}
+                                    className="w-full sm:flex-1 px-4 py-3 bg-gradient-to-r from-accent to-[#0088cc] text-white font-bold text-[13px] rounded-xl hover:shadow-[0_0_15px_rgba(0,198,255,0.3)] transition-all duration-300 active:scale-[0.98] uppercase tracking-wider text-center"
+                                >
+                                    Call Now
+                                </a>
+                                <button
+                                    onClick={() => {
+                                        document.querySelector('#pricing')?.scrollIntoView({ behavior: 'smooth' });
+                                        trackLeadEvent('free_trial_click', { location: 'contact_page' });
+                                    }}
+                                    className="w-full sm:flex-1 px-4 py-3 bg-white/10 text-white font-bold text-[13px] rounded-xl hover:bg-white/20 transition-all duration-300 active:scale-[0.98] uppercase tracking-wider text-center border border-white/5"
+                                >
+                                    Free Trial
+                                </button>
+                            </div>
                         </div>
                     </motion.div>
 
