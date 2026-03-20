@@ -3,19 +3,27 @@
 @theme {
   --color-dark: #0a0a0a;
   --color-dark-lighter: #0f0f0f;
-  --color-card: #141414;
-  --color-card-light: #1a1a1a;
-  --color-card-hover: #1f1f1f;
-  --color-accent: #ff2c2c;
-  --color-accent-dark: #cc2222;
-  --color-accent-glow: rgba(255, 44, 44, 0.15);
-  --color-text: #f3f4f6;
+  --color-card: #111827;
+  --color-card-light: #1f2937;
+  --color-card-hover: #1e3a5f;
+  --color-accent: #00c6ff;
+  --color-accent-dark: #0088cc;
+  --color-accent-glow: rgba(0, 198, 255, 0.15);
+  --color-text: #e5e7eb;
   --color-text-muted: #9ca3af;
   --color-text-dim: #6b7280;
-  --color-border: #1e1e1e;
-  --color-border-light: #2a2a2a;
+  --color-border: #1f2937;
+  --color-border-light: #374151;
   --font-montserrat: 'Montserrat', sans-serif;
   --font-poppins: 'Poppins', sans-serif;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* ═══════════════════════════════════
@@ -35,7 +43,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff2c2c;
+  background: #00c6ff;
 }
 
 /* ═══════════════════════════════════
@@ -52,7 +60,7 @@ html {
 }
 
 ::selection {
-  background: #ff2c2c;
+  background: #00c6ff;
   color: #fff;
 }
 
@@ -63,9 +71,9 @@ html {
   height: 1px;
   background: linear-gradient(90deg,
       transparent 0%,
-      rgba(255, 44, 44, 0.15) 20%,
-      rgba(255, 44, 44, 0.3) 50%,
-      rgba(255, 44, 44, 0.15) 80%,
+      rgba(0, 198, 255, 0.15) 20%,
+      rgba(0, 198, 255, 0.3) 50%,
+      rgba(0, 198, 255, 0.15) 80%,
       transparent 100%);
 }
 
@@ -80,11 +88,11 @@ html {
 }
 
 .premium-card:hover {
-  border-color: rgba(255, 44, 44, 0.25);
+  border-color: rgba(0, 198, 255, 0.25);
   box-shadow:
-    0 0 0 1px rgba(255, 44, 44, 0.05),
+    0 0 0 1px rgba(0, 198, 255, 0.05),
     0 8px 40px rgba(0, 0, 0, 0.4),
-    0 0 60px rgba(255, 44, 44, 0.06);
+    0 0 60px rgba(0, 198, 255, 0.06);
   transform: translateY(-4px);
 }
 
@@ -101,7 +109,7 @@ html {
   position: absolute;
   inset: 0;
   background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-      rgba(255, 44, 44, 0.06),
+      rgba(0, 198, 255, 0.06),
       transparent 40%);
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -117,7 +125,7 @@ html {
    Gradient Text Utility
    ═══════════════════════════════════ */
 .gradient-text {
-  background: linear-gradient(135deg, #ff2c2c 0%, #ff6b6b 50%, #ff2c2c 100%);
+  background: linear-gradient(135deg, #00c6ff 0%, #22d3ee 50%, #00c6ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -127,7 +135,7 @@ html {
    Premium Button Styles
    ═══════════════════════════════════ */
 .btn-primary {
-  background: linear-gradient(135deg, #ff2c2c 0%, #cc1111 100%);
+  background: linear-gradient(135deg, #00c6ff 0%, #0088cc 100%);
   color: white;
   font-weight: 600;
   border-radius: 0.75rem;
@@ -140,15 +148,15 @@ html {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, #ff4444 0%, #ff2c2c 100%);
+  background: linear-gradient(135deg, #33d1ff 0%, #00c6ff 100%);
   opacity: 0;
   transition: opacity 0.4s ease;
 }
 
 .btn-primary:hover {
   box-shadow:
-    0 4px 20px rgba(255, 44, 44, 0.35),
-    0 0 60px rgba(255, 44, 44, 0.15);
+    0 4px 20px rgba(0, 198, 255, 0.35),
+    0 0 60px rgba(0, 198, 255, 0.15);
   transform: scale(1.03);
 }
 
@@ -171,7 +179,7 @@ html {
   transform: translate(-50%, -50%);
   width: 60%;
   height: 60%;
-  background: radial-gradient(ellipse, rgba(255, 44, 44, 0.04) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(0, 198, 255, 0.04) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
 }
@@ -234,10 +242,10 @@ html {
    ═══════════════════════════════════ */
 @keyframes pricing-glow {
   0%, 100% {
-    box-shadow: 0 0 30px rgba(255, 44, 44, 0.12), 0 8px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 30px rgba(0, 198, 255, 0.12), 0 8px 40px rgba(0, 0, 0, 0.4);
   }
   50% {
-    box-shadow: 0 0 50px rgba(255, 44, 44, 0.2), 0 8px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 50px rgba(0, 198, 255, 0.2), 0 8px 40px rgba(0, 0, 0, 0.4);
   }
 }
 
