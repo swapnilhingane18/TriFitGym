@@ -34,13 +34,11 @@ export default function About() {
                     <h2 className="font-montserrat font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-[3.25rem] mt-5 mb-7 leading-tight tracking-tight">
                         More Than Just a <span className="gradient-text">Gym</span>
                     </h2>
-                    <p className="max-w-3xl mx-auto text-text-muted text-base lg:text-lg leading-relaxed font-light">
-                        TRIFIT isn&apos;t just a place to work out — it&apos;s a community
-                        that transforms lives. Located in the heart of Wagholi, Pune, we bring
-                        world-class fitness facilities, expert trainers, and a motivating
-                        environment designed to push your limits and help you achieve your
-                        dream physique.
-                    </p>
+                    <ul className="max-w-sm mx-auto flex flex-col items-center sm:items-start space-y-4 text-left font-montserrat font-bold text-[#f3f4f6] text-lg tracking-wide uppercase mt-8">
+                        <li className="flex items-center gap-3"><span className="text-accent text-2xl">⚡</span> Premium Equipment</li>
+                        <li className="flex items-center gap-3"><span className="text-accent text-2xl">👨‍🏫</span> Expert Trainers</li>
+                        <li className="flex items-center gap-3"><span className="text-accent text-2xl">🔥</span> Real Results</li>
+                    </ul>
                 </motion.div>
 
                 {/* Stats Grid */}

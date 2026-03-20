@@ -37,19 +37,6 @@ export default function Hero() {
 
             {/* Content */}
             <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 text-center pt-20">
-                <motion.div
-                    initial={{ opacity: 0, y: 25 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.9, ease: [0.25, 0.46, 0.45, 0.94] }}
-                >
-                    <span className="inline-block px-5 py-1.5 mb-2 sm:mb-4 text-[10px] sm:text-[11px] font-bold tracking-[0.2em] uppercase text-accent border border-accent/20 rounded-full bg-accent/[0.06] backdrop-blur-sm shadow-[0_0_15px_rgba(0,198,255,0.1)]">
-                        🏆 Rated among the top gyms in Wagholi, Pune
-                    </span>
-                    <div className="text-white hover:text-accent font-semibold text-xs sm:text-sm tracking-wide uppercase mb-5 sm:mb-8 animate-pulse">
-                        <span className="bg-accent/20 px-3 py-1 rounded-full border border-accent/30 shadow-[0_0_15px_rgba(0,198,255,0.3)]">🔥 Limited Offer – Free Trial Available</span>
-                    </div>
-                </motion.div>
-
                 <motion.h1
                     initial={{ opacity: 0, y: 35 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -66,21 +53,12 @@ export default function Hero() {
                 </motion.h1>
 
                 <motion.p
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.9, delay: 0.22, ease: [0.25, 0.46, 0.45, 0.94] }}
-                    className="text-[#E5E7EB] font-semibold text-xs sm:text-sm tracking-wide uppercase mb-3 sm:mb-4 drop-shadow-md"
-                >
-                    ⭐ 4.7 Rated | Join 1000+ members already training at TRIFIT
-                </motion.p>
-
-                <motion.p
                     initial={{ opacity: 0, y: 25 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.9, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
-                    className="max-w-2xl mx-auto text-text-muted text-[15px] sm:text-lg md:text-[1.15rem] mb-6 sm:mb-6 md:mb-10 leading-relaxed font-medium drop-shadow-sm"
+                    className="text-[#E5E7EB] text-[15px] sm:text-lg md:text-[1.15rem] mb-8 font-semibold drop-shadow-sm uppercase tracking-wider"
                 >
-                    This isn&apos;t just a gym. This is where your transformation begins.
+                    Build muscle. Burn fat. Transform.
                 </motion.p>
 
                 {/* CTA Buttons */}
@@ -88,34 +66,23 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 25 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.9, delay: 0.45, ease: [0.25, 0.46, 0.45, 0.94] }}
-                    className="flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-5 w-full max-w-[280px] sm:max-w-none mx-auto mb-4"
+                    className="w-full max-w-[280px] sm:max-w-none mx-auto"
                 >
                     <button
                         onClick={() => {
                             handleScroll('#pricing');
                             trackLeadEvent('free_trial_click', { location: 'hero' });
                         }}
-                        className="group w-full sm:w-auto px-10 py-3.5 min-h-[44px] bg-gradient-to-r from-accent to-[#0088cc] text-white font-black rounded-xl shadow-[0_0_20px_rgba(0,198,255,0.4)] hover:shadow-[0_0_35px_rgba(0,198,255,0.8)] transition-all duration-300 active:scale-[0.96] flex items-center justify-center gap-2 uppercase tracking-wider text-[13px]"
+                        className="group w-full sm:w-auto px-12 py-4 min-h-[52px] bg-gradient-to-r from-accent to-[#0088cc] text-white font-black rounded-xl shadow-[0_0_20px_rgba(0,198,255,0.4)] hover:shadow-[0_0_35px_rgba(0,198,255,0.8)] transition-all duration-300 active:scale-[0.96] flex items-center justify-center gap-2 uppercase tracking-wider text-[14px]"
                     >
                         Book Free Trial
                         <FaPlay className="text-[10px] group-hover:translate-x-1 transition-transform duration-300" />
                     </button>
-                    <button
-                        onClick={() => handleScroll('#pricing')}
-                        className="w-full sm:w-auto px-8 py-3.5 min-h-[44px] border border-white/10 text-white/70 font-bold rounded-xl text-[13px] hover:bg-white/[0.05] hover:text-white transition-all duration-300 uppercase tracking-wide active:scale-[0.96]"
-                    >
-                        Explore Membership
-                    </button>
+                    
+                    <p className="text-[#E5E7EB] text-[11px] mt-4 font-bold tracking-[0.15em] uppercase opacity-90">
+                        ⚡ Limited slots &bull; Quick signup &bull; No commitment
+                    </p>
                 </motion.div>
-
-                <motion.p
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.9, delay: 0.6 }}
-                    className="text-[#FACC15] text-xs sm:text-sm font-semibold tracking-wide"
-                >
-                    ⚡ Limited slots available this week
-                </motion.p>
 
                 {/* Space maintained for TrustBar below */}
                 <div className="pb-16 md:pb-0" />

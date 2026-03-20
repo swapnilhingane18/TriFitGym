@@ -7,27 +7,27 @@ const amenities = [
     {
         icon: GiWeightLiftingUp,
         title: 'Modern Strength Equipment',
-        desc: 'State-of-the-art machines and free weights from top fitness brands.',
+        desc: 'Top-tier machines & free weights.',
     },
     {
         icon: FaHeartbeat,
         title: 'Cardio Zone',
-        desc: 'Treadmills, ellipticals, rowing machines, and cycling stations.',
+        desc: 'Treadmills, ellipticals, & cycling.',
     },
     {
         icon: FaExpandArrowsAlt,
         title: 'Personal Training Area',
-        desc: 'Dedicated space for one-on-one sessions with certified trainers.',
+        desc: 'Dedicated 1-on-1 coaching space.',
     },
     {
         icon: GiLockers,
         title: 'Locker Rooms',
-        desc: 'Clean, spacious locker rooms with showers and secure storage.',
+        desc: 'Clean, secure shower facilities.',
     },
     {
         icon: GiRunningShoe,
         title: 'Spacious Workout Floor',
-        desc: 'Open area for stretching, functional training, and group workouts.',
+        desc: 'Open area for functional training.',
     },
 ]
 

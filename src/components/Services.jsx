@@ -12,27 +12,27 @@ const services = [
     {
         icon: GiWeightLiftingUp,
         title: 'Strength Training',
-        desc: 'Build raw strength with scientifically designed programs and premium equipment.',
+        desc: 'Build raw strength. Premium free weights.',
     },
     {
         icon: FaUserFriends,
         title: 'Personal Training',
-        desc: 'One-on-one sessions with certified trainers who craft custom plans for your goals.',
+        desc: '1-on-1 coaching. Custom fitness plans.',
     },
     {
         icon: GiRunningShoe,
         title: 'Fat Loss Programs',
-        desc: 'Intensive cardio and HIIT programs designed to burn fat and boost metabolism.',
+        desc: 'High-intensity cardio. Burn stubborn fat.',
     },
     {
         icon: GiMuscleUp,
         title: 'Muscle Building',
-        desc: 'Progressive overload programs to build lean muscle with proper form guidance.',
+        desc: 'Progressive overload. Pure form guidance.',
     },
     {
         icon: GiMeal,
         title: 'Diet Guidance',
-        desc: 'Personalized nutrition plans and counseling to fuel your fitness journey.',
+        desc: 'Personalized nutrition. Maximize your results.',
     },
 ]
 
