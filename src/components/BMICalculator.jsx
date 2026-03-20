@@ -29,12 +29,12 @@ export default function BMICalculator() {
     const badgeClass = (l) => l === 'Normal' ? 'bg-green-500/10 text-green-400 border-green-500/25' : l === 'Underweight' ? 'bg-blue-500/10 text-blue-400 border-blue-500/25' : l === 'Overweight' ? 'bg-yellow-500/10 text-yellow-400 border-yellow-500/25' : 'bg-accent/10 text-accent border-accent/25'
 
     return (
-        <section className="py-16 sm:py-24 lg:py-36 relative ambient-glow" ref={ref}>
+        <section className="py-8 md:py-12 relative ambient-glow" ref={ref}>
             <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
                 <motion.div {...fadeUp()} animate={inView ? fadeUp().animate : {}} className="text-center mb-10 sm:mb-16">
                     <span className="text-accent text-[11px] font-bold tracking-[0.25em] uppercase">Health Check</span>
                     <h2 className="font-montserrat font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-[3.25rem] mt-5 mb-7 leading-tight tracking-tight">BMI <span className="gradient-text">Calculator</span></h2>
-                    <p className="max-w-2xl mx-auto text-text-muted text-base lg:text-lg font-light">Check your BMI and find the right Royal Fitness program for you.</p>
+                    <p className="max-w-2xl mx-auto text-text-muted text-base lg:text-lg font-light">Check your BMI and find the right TRIFIT program for you.</p>
                 </motion.div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-7 max-w-5xl mx-auto">
@@ -46,15 +46,15 @@ export default function BMICalculator() {
                         <div className="space-y-6">
                             <div>
                                 <label className="block text-[11px] font-bold text-text-dim mb-2.5 uppercase tracking-[0.15em]">Height (cm)</label>
-                                <input type="number" value={h} onChange={e => setH(e.target.value)} placeholder="e.g. 175" className="w-full px-5 py-4 bg-dark border border-border rounded-xl text-white placeholder-text-dim/40 focus:outline-none focus:border-accent/40 focus:ring-1 focus:ring-accent/20 transition-all duration-400 text-[14px]" />
+                                <input type="number" value={h} onChange={e => setH(e.target.value)} placeholder="e.g. 175" className="w-full px-5 py-4 bg-dark border border-border rounded-xl text-white placeholder-text-dim/40 focus:outline-none focus:border-accent/40 focus:ring-1 focus:ring-accent/20 transition-all duration-300 text-[14px]" />
                             </div>
                             <div>
                                 <label className="block text-[11px] font-bold text-text-dim mb-2.5 uppercase tracking-[0.15em]">Weight (kg)</label>
-                                <input type="number" value={w} onChange={e => setW(e.target.value)} placeholder="e.g. 70" className="w-full px-5 py-4 bg-dark border border-border rounded-xl text-white placeholder-text-dim/40 focus:outline-none focus:border-accent/40 focus:ring-1 focus:ring-accent/20 transition-all duration-400 text-[14px]" />
+                                <input type="number" value={w} onChange={e => setW(e.target.value)} placeholder="e.g. 70" className="w-full px-5 py-4 bg-dark border border-border rounded-xl text-white placeholder-text-dim/40 focus:outline-none focus:border-accent/40 focus:ring-1 focus:ring-accent/20 transition-all duration-300 text-[14px]" />
                             </div>
                             <div className="flex gap-3 pt-1">
-                                <button onClick={calc} className="flex-1 py-4 bg-gradient-to-r from-accent to-red-800 text-white font-bold text-[13px] uppercase tracking-[0.15em] rounded-xl hover:shadow-xl hover:shadow-accent/25 transition-all duration-500 hover:scale-[1.02] active:scale-[0.98]">Calculate BMI</button>
-                                <button onClick={() => { setH(''); setW(''); setRes(null) }} className="px-6 py-4 bg-white/[0.04] border border-border text-text-dim font-bold text-[13px] uppercase tracking-wider rounded-xl hover:bg-white/[0.08] transition-all duration-400">Reset</button>
+                                <button onClick={calc} className="flex-1 py-4 bg-gradient-to-r from-accent to-[#0088cc] text-white font-bold text-[13px] uppercase tracking-[0.15em] rounded-xl hover:shadow-xl hover:shadow-accent/25 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]">Calculate BMI</button>
+                                <button onClick={() => { setH(''); setW(''); setRes(null) }} className="px-6 py-4 bg-white/[0.04] border border-border text-text-dim font-bold text-[13px] uppercase tracking-wider rounded-xl hover:bg-white/[0.08] transition-all duration-300">Reset</button>
                             </div>
                         </div>
                         {res && (
@@ -73,7 +73,7 @@ export default function BMICalculator() {
                         <h3 className="font-montserrat font-bold text-lg mb-9 tracking-tight">BMI Categories</h3>
                         <div className="space-y-3.5">
                             {cats.map(c => (
-                                <div key={c.label} className={`flex items-center gap-4 p-4 rounded-xl border transition-all duration-500 ${res && res.label === c.label ? 'bg-white/[0.04] border-accent/25 shadow-lg shadow-accent/[0.04]' : 'border-border/40 hover:border-border'}`}>
+                                <div key={c.label} className={`flex items-center gap-4 p-4 rounded-xl border transition-all duration-300 ${res && res.label === c.label ? 'bg-white/[0.04] border-accent/25 shadow-lg shadow-accent/[0.04]' : 'border-border/40 hover:border-border'}`}>
                                     <div className={`w-2.5 h-2.5 rounded-full shrink-0 ${c.bg}`} />
                                     <div className="flex-1">
                                         <div className="flex items-center justify-between">

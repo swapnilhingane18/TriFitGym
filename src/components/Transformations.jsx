@@ -42,7 +42,7 @@ export default function Transformations() {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 })
 
     return (
-        <section className="py-16 sm:py-24 lg:py-36" ref={ref}>
+        <section className="py-8 md:py-12" ref={ref}>
             <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
                 <motion.div
                     {...fadeUp()}
@@ -56,7 +56,7 @@ export default function Transformations() {
                         Real Results From <span className="gradient-text">Real Members</span>
                     </h2>
                     <p className="max-w-2xl mx-auto text-text-muted text-base lg:text-lg font-light">
-                        These incredible transformations happened right here at Royal Fitness.
+                        These incredible transformations happened right here at TRIFIT.
                         Your journey could be next.
                     </p>
                 </motion.div>
@@ -72,13 +72,13 @@ export default function Transformations() {
                             {/* Before / After Images */}
                             <div className="relative h-56 flex">
                                 <div className="w-1/2 relative overflow-hidden">
-                                    <img src={t.beforeImg} alt="Before" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                    <img src={t.beforeImg} alt="Before" className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700" />
                                     <div className="absolute bottom-2 left-2 bg-dark/70 backdrop-blur-md text-[10px] font-bold px-3 py-1 rounded-full border border-white/10 uppercase tracking-wider">
                                         Before
                                     </div>
                                 </div>
                                 <div className="w-1/2 relative overflow-hidden">
-                                    <img src={t.afterImg} alt="After" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                    <img src={t.afterImg} alt="After" className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700" />
                                     <div className="absolute bottom-2 right-2 bg-accent/80 backdrop-blur-md text-[10px] font-bold px-3 py-1 rounded-full text-white uppercase tracking-wider">
                                         After
                                     </div>

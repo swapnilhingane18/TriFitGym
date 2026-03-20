@@ -48,10 +48,10 @@ export default function FreeTrialPopup() {
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.95, y: 10 }}
                         transition={{ type: "spring", duration: 0.5, bounce: 0.3 }}
-                        className="relative w-full max-w-md bg-gradient-to-b from-[#1a1010] to-[#121212] rounded-2xl border border-accent/30 shadow-[0_0_60px_rgba(255,44,44,0.15)] overflow-hidden"
+                        className="relative w-full max-w-md bg-gradient-to-b from-[#1a1010] to-[#121212] rounded-2xl border border-accent/30 shadow-[0_0_60px_rgba(0,198,255,0.15)] overflow-hidden"
                     >
                         {/* Red Top Accent */}
-                        <div className="h-1.5 w-full bg-gradient-to-r from-accent to-red-800" />
+                        <div className="h-1.5 w-full bg-gradient-to-r from-accent to-[#0088cc]" />
 
                         {/* Close Button */}
                         <button
@@ -98,7 +98,7 @@ export default function FreeTrialPopup() {
                                     
                                     <button
                                         type="submit"
-                                        className="w-full py-4 mt-2 bg-gradient-to-r from-accent to-red-800 text-white font-bold rounded-xl text-sm uppercase tracking-wider shadow-lg shadow-accent/25 hover:shadow-accent/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+                                        className="w-full py-4 mt-2 bg-gradient-to-r from-accent to-[#0088cc] text-white font-bold rounded-xl text-sm uppercase tracking-wider shadow-lg shadow-accent/25 hover:shadow-accent/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
                                     >
                                         Claim Free Trial
                                     </button>

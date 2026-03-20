@@ -53,7 +53,7 @@ export default function Navbar() {
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}
                 transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
-                className={`fixed top-0 left-0 right-0 z-[9999] transition-all duration-500 ease-out ${
+                className={`fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 ease-out ${
                     scrolled || mobileOpen
                         ? 'bg-dark/80 backdrop-blur-xl shadow-2xl shadow-black/40 border-b border-white/[0.04]'
                         : 'bg-transparent'
@@ -65,8 +65,8 @@ export default function Navbar() {
                         {/* Logo */}
                         <a href="#home" className="flex items-center gap-2 md:gap-2.5 group">
                             <div className="relative">
-                                <FaDumbbell className="text-accent text-xl md:text-2xl group-hover:rotate-12 transition-transform duration-500" />
-                                <div className="absolute inset-0 bg-accent/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                                <FaDumbbell className="text-accent text-xl md:text-2xl group-hover:rotate-12 transition-transform duration-300" />
+                                <div className="absolute inset-0 bg-accent/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                             </div>
                             <span className="font-montserrat font-extrabold text-lg md:text-xl tracking-tight">
                                 ROYAL <span className="text-accent">FITNESS</span>
@@ -83,13 +83,13 @@ export default function Navbar() {
                                     className="relative px-4 py-2 text-[13px] font-medium text-text-muted hover:text-white transition-colors duration-300 group tracking-wide uppercase"
                                 >
                                     {link.name}
-                                    <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-accent rounded-full group-hover:w-6 transition-all duration-400" />
+                                    <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-accent rounded-full group-hover:w-6 transition-all duration-300" />
                                 </a>
                             ))}
                             <a
                                 href="#pricing"
                                 onClick={(e) => handleClick(e, '#pricing')}
-                                className="ml-4 px-7 py-2.5 bg-gradient-to-r from-accent to-[#0088cc] text-white text-[13px] font-bold uppercase tracking-wider rounded-lg hover:shadow-lg hover:shadow-accent/25 transition-all duration-400 hover:scale-[1.04] active:scale-[0.98]"
+                                className="ml-4 px-7 py-2.5 bg-gradient-to-r from-accent to-[#0088cc] text-white text-[13px] font-bold uppercase tracking-wider rounded-lg hover:shadow-lg hover:shadow-accent/25 transition-all duration-300 hover:scale-[1.03] active:scale-[0.98]"
                             >
                                 Join Now
                             </a>

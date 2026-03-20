@@ -20,7 +20,7 @@ export default function About() {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.15 })
 
     return (
-        <section id="about" className="py-16 sm:py-24 lg:py-36 relative ambient-glow" ref={ref}>
+        <section id="about" className="py-8 md:py-12 relative ambient-glow" ref={ref}>
             <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
                 {/* Header */}
                 <motion.div
@@ -35,7 +35,7 @@ export default function About() {
                         More Than Just a <span className="gradient-text">Gym</span>
                     </h2>
                     <p className="max-w-3xl mx-auto text-text-muted text-base lg:text-lg leading-relaxed font-light">
-                        Royal Fitness isn&apos;t just a place to work out — it&apos;s a community
+                        TRIFIT isn&apos;t just a place to work out — it&apos;s a community
                         that transforms lives. Located in the heart of Wagholi, Pune, we bring
                         world-class fitness facilities, expert trainers, and a motivating
                         environment designed to push your limits and help you achieve your
@@ -53,7 +53,7 @@ export default function About() {
                             className="group premium-card glow-hover p-8 lg:p-10 text-center"
                         >
                             <div className="relative z-10">
-                                <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-accent/[0.08] text-accent mb-5 group-hover:bg-accent group-hover:text-white transition-all duration-500 group-hover:shadow-lg group-hover:shadow-accent/20">
+                                <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-accent/[0.08] text-accent mb-5 group-hover:bg-accent group-hover:text-white transition-all duration-300 group-hover:shadow-lg group-hover:shadow-accent/20">
                                     <stat.icon className="text-2xl" />
                                 </div>
                                 <div className="font-montserrat font-extrabold text-3xl sm:text-4xl text-white mb-2 tracking-tight">

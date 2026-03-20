@@ -46,7 +46,7 @@ export default function Services() {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.08 })
 
     return (
-        <section id="services" className="py-16 sm:py-24 lg:py-36 relative" ref={ref}>
+        <section id="services" className="py-8 md:py-12 relative" ref={ref}>
             <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
                 {/* Header */}
                 <motion.div
@@ -76,10 +76,10 @@ export default function Services() {
                             className="group premium-card glow-hover p-8 lg:p-9"
                         >
                             <div className="relative z-10">
-                                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent/[0.08] text-accent mb-7 group-hover:bg-accent group-hover:text-white transition-all duration-500 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-accent/20">
+                                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent/[0.08] text-accent mb-7 group-hover:bg-accent group-hover:text-white transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-accent/20">
                                     <service.icon className="text-[1.75rem]" />
                                 </div>
-                                <h3 className="font-montserrat font-bold text-lg mb-3 group-hover:text-accent transition-colors duration-400 tracking-tight">
+                                <h3 className="font-montserrat font-bold text-lg mb-3 group-hover:text-accent transition-colors duration-300 tracking-tight">
                                     {service.title}
                                 </h3>
                                 <p className="text-text-muted leading-relaxed text-[13px] font-light">

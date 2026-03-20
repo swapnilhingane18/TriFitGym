@@ -14,7 +14,7 @@ const faqs = [
     },
     {
         q: 'What are gym timings?',
-        a: 'Royal Fitness is open from 5:30 AM to 10:30 PM, Monday through Saturday. On Sundays, we operate from 7:00 AM to 1:00 PM. We also offer early morning batches for working professionals.',
+        a: 'TRIFIT is open from 5:30 AM to 10:30 PM, Monday through Saturday. On Sundays, we operate from 7:00 AM to 1:00 PM. We also offer early morning batches for working professionals.',
     },
     {
         q: 'Are beginners welcome?',
@@ -41,7 +41,7 @@ export default function FAQ() {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 })
 
     return (
-        <section className="py-16 sm:py-24 lg:py-36 relative ambient-glow" ref={ref}>
+        <section className="py-8 md:py-12 relative ambient-glow" ref={ref}>
             <div className="max-w-3xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
                 <motion.div
                     {...fadeUp()}
@@ -62,7 +62,7 @@ export default function FAQ() {
                             key={i}
                             {...fadeUp(0.06 + 0.06 * i)}
                             animate={inView ? fadeUp(0.06 + 0.06 * i).animate : {}}
-                            className={`premium-card overflow-hidden transition-all duration-500 ${open === i ? '!border-accent/30 shadow-xl shadow-accent/[0.04]' : ''
+                            className={`premium-card overflow-hidden transition-all duration-300 ${open === i ? '!border-accent/30 shadow-xl shadow-accent/[0.04]' : ''
                                 }`}
                         >
                             <button
@@ -73,7 +73,7 @@ export default function FAQ() {
                                     {faq.q}
                                 </span>
                                 <span
-                                    className={`shrink-0 w-8 h-8 rounded-lg flex items-center justify-center transition-all duration-400 ${open === i
+                                    className={`shrink-0 w-8 h-8 rounded-lg flex items-center justify-center transition-all duration-300 ${open === i
                                             ? 'bg-accent text-white rotate-180 shadow-lg shadow-accent/25'
                                             : 'bg-white/[0.04] text-text-dim'
                                         }`}

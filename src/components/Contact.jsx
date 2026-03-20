@@ -33,7 +33,7 @@ export default function Contact() {
                         Visit <span className="gradient-text">TRIFIT</span> in Wagholi
                     </h2>
                     <p className="max-w-2xl mx-auto text-text-muted text-base lg:text-lg font-light mb-3">
-                        Located in Wagholi, Pune. Visit us or reach out — we&apos;d love to help you start your fitness journey.
+                        Proudly serving Wagholi and nearby areas. Visit us or reach out — we&apos;d love to help you start your fitness journey.
                     </p>
                     <p className="font-montserrat font-bold text-accent text-lg sm:text-xl tracking-tight">
                         Call Now &amp; Start Your Fitness Journey Today
@@ -55,7 +55,7 @@ export default function Contact() {
                                     {...(item.link ? { href: item.link, target: '_blank', rel: 'noopener noreferrer' } : {})}
                                     className="group flex items-center gap-5 premium-card glow-hover p-6 cursor-pointer"
                                 >
-                                    <div className="relative z-10 shrink-0 w-13 h-13 rounded-xl bg-accent/[0.08] text-accent flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-all duration-500 group-hover:shadow-lg group-hover:shadow-accent/20">
+                                    <div className="relative z-10 shrink-0 w-13 h-13 rounded-xl bg-accent/[0.08] text-accent flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-all duration-300 group-hover:shadow-lg group-hover:shadow-accent/20">
                                         <item.icon className="text-lg" />
                                     </div>
                                     <div className="relative z-10">
@@ -80,7 +80,7 @@ export default function Contact() {
                                 href="https://wa.me/919730091331?text=Hi%2C%20I%20want%20to%20book%20a%20free%20trial%20at%20TRIFIT."
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-block px-7 py-3.5 bg-gradient-to-r from-accent to-[#0088cc] text-white font-bold text-[13px] rounded-xl hover:shadow-xl hover:shadow-accent/25 transition-all duration-500 hover:scale-[1.03] active:scale-[0.98] uppercase tracking-wider"
+                                className="inline-block px-7 py-3.5 bg-gradient-to-r from-accent to-[#0088cc] text-white font-bold text-[13px] rounded-xl hover:shadow-xl hover:shadow-accent/25 transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] uppercase tracking-wider"
                             >
                                 Message on WhatsApp
                             </a>

@@ -5,30 +5,30 @@ import { FaStar, FaQuoteLeft } from 'react-icons/fa'
 const testimonials = [
     {
         name: 'Aditya Kale',
-        role: 'Member since 2023',
-        text: 'Royal Fitness completely changed my lifestyle. The trainers are incredibly knowledgeable and the gym has world-class equipment. I have lost 15 kgs in just 4 months!',
+        role: 'Lost 12kg in 5 months',
+        text: 'I was intimidated to start, but TRIFIT changed everything. I lost 12kg in 5 months. The trainers here actually care about your progress.',
         rating: 5,
         img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80',
     },
     {
         name: 'Meera Joshi',
-        role: 'Member since 2022',
-        text: 'The best gym in Wagholi hands down. Clean facilities, amazing trainers, and a motivating atmosphere. I love the Zumba classes — they are so much fun!',
+        role: 'Gained muscle & confidence',
+        text: 'This isn\'t just a gym, it\'s a community. From completely sedentary to lifting weights 4x a week. Best decision I made for my mental health.',
         rating: 5,
         img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80',
     },
     {
         name: 'Suresh Pawar',
-        role: 'Member since 2024',
-        text: 'I joined as a complete beginner and the trainers made me feel so welcome. The personal training sessions are worth every penny. Highly recommended!',
+        role: 'Rehab to strength athlete',
+        text: 'The equipment is premium, but the coaching is what makes it. They helped me push past my plateaus safely. Hands down the best in Wagholi.',
         rating: 5,
         img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80',
     },
     {
         name: 'Pooja Desai',
-        role: 'Member since 2023',
-        text: 'Great gym with amazing vibes! The diet guidance helped me reach my goals faster. The Pro membership plan gives incredible value for money.',
-        rating: 4,
+        role: 'Lost 8kg & feels amazing',
+        text: 'I lost 8kg in 3 months! The vibe here is so incredibly motivating. You walk in and just instantly want to crush your workout.',
+        rating: 5,
         img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80',
     },
 ]
@@ -43,7 +43,7 @@ export default function Testimonials() {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 })
 
     return (
-        <section className="py-16 sm:py-24 lg:py-36 relative" ref={ref}>
+        <section className="py-8 md:py-12 relative" ref={ref}>
             <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
                 <motion.div
                     {...fadeUp()}
@@ -64,7 +64,7 @@ export default function Testimonials() {
                             key={t.name}
                             {...fadeUp(0.08 + 0.08 * i)}
                             animate={inView ? fadeUp(0.08 + 0.08 * i).animate : {}}
-                            className="group premium-card glow-hover p-8 lg:p-9 relative hover:scale-[1.02] hover:shadow-2xl hover:shadow-accent/10 transition-all duration-500"
+                            className="group glass-panel glow-hover p-8 lg:p-9 relative rounded-2xl hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(0,198,255,0.15)] transition-all duration-300"
                         >
                             <FaQuoteLeft className="absolute top-7 right-7 text-accent/[0.06] text-5xl" />
                             <div className="relative z-10">
@@ -72,7 +72,7 @@ export default function Testimonials() {
                                     {[...Array(5)].map((_, j) => (
                                         <FaStar
                                             key={j}
-                                            className={`text-[15px] ${j < t.rating ? 'text-yellow-400 drop-shadow-[0_0_4px_rgba(250,204,21,0.4)]' : 'text-gray-700'}`}
+                                            className={`text-[16px] ${j < t.rating ? 'text-[#FACC15] drop-shadow-[0_0_5px_rgba(234,179,8,0.6)]' : 'text-gray-700'}`}
                                         />
                                     ))}
                                     <span className="text-text-dim text-xs ml-1 font-medium">{t.rating}.0</span>

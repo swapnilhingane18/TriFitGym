@@ -31,6 +31,9 @@ export default function Footer() {
                                 ROYAL <span className="text-accent">FITNESS</span>
                             </span>
                         </a>
+                        <p className="text-[#00C6FF] font-bold text-sm mb-2 uppercase tracking-wide">
+                            Best Gym in Wagholi, Pune
+                        </p>
                         <p className="text-text-dim text-[13px] leading-[1.8] max-w-md mb-7 font-light">
                             Wagholi&apos;s premier fitness destination. We combine world-class
                             equipment, expert trainers, and a motivating community to help you
@@ -44,7 +47,7 @@ export default function Footer() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label={s.label}
-                                    className="w-10 h-10 rounded-xl bg-white/[0.04] border border-border flex items-center justify-center text-text-dim hover:bg-accent hover:border-accent hover:text-white transition-all duration-400 hover:shadow-lg hover:shadow-accent/20"
+                                    className="w-10 h-10 rounded-xl bg-white/[0.04] border border-border flex items-center justify-center text-text-dim hover:bg-accent hover:border-accent hover:text-white transition-all duration-300 hover:shadow-lg hover:shadow-accent/20"
                                 >
                                     <s.icon className="text-sm" />
                                 </a>
@@ -116,7 +119,7 @@ export default function Footer() {
             {/* Scroll to top */}
             <button
                 onClick={scrollToTop}
-                className="absolute -top-5 right-8 w-10 h-10 rounded-xl bg-accent text-white flex items-center justify-center hover:shadow-xl hover:shadow-accent/30 transition-all duration-400 hover:scale-110 active:scale-95"
+                className="absolute -top-5 right-8 w-10 h-10 rounded-xl bg-accent text-white flex items-center justify-center hover:shadow-xl hover:shadow-accent/30 transition-all duration-300 hover:scale-110 active:scale-95"
                 aria-label="Back to top"
             >
                 <FaArrowUp className="text-sm" />

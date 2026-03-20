@@ -35,7 +35,7 @@ export default function Trainers() {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 })
 
     return (
-        <section id="trainers" className="py-16 sm:py-24 lg:py-36 relative" ref={ref}>
+        <section id="trainers" className="py-8 md:py-12 relative" ref={ref}>
             <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
                 <motion.div
                     {...fadeUp()}
@@ -71,7 +71,7 @@ export default function Trainers() {
                                 <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
 
                                 {/* Social Overlay */}
-                                <div className="absolute inset-0 flex items-center justify-center bg-accent/15 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-500">
+                                <div className="absolute inset-0 flex items-center justify-center bg-accent/15 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-300">
                                     <button className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-white hover:bg-accent transition-colors duration-300 border border-white/20 shadow-xl">
                                         <FaInstagram className="text-xl" />
                                     </button>

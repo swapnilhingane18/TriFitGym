@@ -34,19 +34,19 @@ const FinalCTA = () => (
             <h2 className="font-montserrat font-black text-3xl sm:text-4xl md:text-5xl mb-4 tracking-tight drop-shadow-lg">
                 Ready to <span className="text-accent drop-shadow-[0_0_15px_rgba(0,198,255,0.4)]">Transform</span> Your Body?
             </h2>
-            <p className="text-text-muted text-base sm:text-lg mb-8 font-light">
-                Join TRIFIT today and start your fitness journey with expert guidance.
+            <p className="text-text-muted text-base sm:text-lg mb-8 font-light max-w-xl mx-auto">
+                No matter your starting point, TRIFIT is built for your journey. Join today and start with expert guidance.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
                 <button
                     onClick={() => document.querySelector('#pricing')?.scrollIntoView({ behavior: 'smooth' })}
-                    className="w-full sm:w-auto px-10 py-4 sm:py-5 bg-gradient-to-r from-accent to-[#0088cc] text-white font-black rounded-xl shadow-[0_0_20px_rgba(0,198,255,0.4)] hover:shadow-[0_0_35px_rgba(0,198,255,0.8)] transition-all duration-300 hover:scale-[1.05] active:scale-[0.97] uppercase tracking-wider text-[14px]"
+                    className="w-full sm:w-auto px-10 py-4 sm:py-5 bg-gradient-to-r from-accent to-[#0088cc] text-white font-black rounded-xl shadow-[0_0_20px_rgba(0,198,255,0.4)] hover:shadow-[0_0_35px_rgba(0,198,255,0.8)] transition-all duration-300 hover:scale-[1.03] active:scale-[0.97] uppercase tracking-wider text-[14px]"
                 >
                     Book Free Trial
                 </button>
                 <a
                     href="tel:+919730091331"
-                    className="w-full sm:w-auto px-10 py-4 sm:py-5 border border-white/10 glass-panel text-white font-bold rounded-xl hover:bg-white/[0.08] hover:border-white/20 transition-all duration-300 hover:scale-[1.05] active:scale-[0.97] uppercase tracking-wider text-[14px]"
+                    className="w-full sm:w-auto px-10 py-4 sm:py-5 border border-white/10 glass-panel text-white font-bold rounded-xl hover:bg-white/[0.08] hover:border-white/20 transition-all duration-300 hover:scale-[1.03] active:scale-[0.97] uppercase tracking-wider text-[14px]"
                 >
                     Call Now
                 </a>

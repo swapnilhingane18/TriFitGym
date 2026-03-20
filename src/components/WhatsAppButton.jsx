@@ -3,7 +3,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 export default function WhatsAppButton() {
     return (
         <a
-            href="https://wa.me/919730091331?text=Hi,%20I%20want%20to%20join%20Royal%20Fitness%20Gym"
+            href="https://wa.me/919730091331?text=Hi%2C%20I%20want%20to%20book%20a%20free%20trial%20at%20TRIFIT."
             target="_blank"
             rel="noopener noreferrer"
             className="fixed bottom-7 right-7 z-50 group hidden md:block"
@@ -15,7 +15,7 @@ export default function WhatsAppButton() {
                 {/* Ping */}
                 <span className="absolute inset-0 rounded-full bg-green-500 animate-ping opacity-20" />
                 {/* Button */}
-                <div className="relative w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-2xl shadow-green-500/30 group-hover:scale-110 group-hover:shadow-green-500/40 transition-all duration-400">
+                <div className="relative w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-2xl shadow-green-500/30 group-hover:scale-110 group-hover:shadow-green-500/40 transition-all duration-300">
                     <FaWhatsapp className="text-white text-2xl" />
                 </div>
             </div>

@@ -14,10 +14,12 @@ export default function Hero() {
         >
             {/* Background */}
             <div className="absolute inset-0">
-                <img
+                <motion.img
                     src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80"
                     alt="TRIFIT Fitness Centre Interior"
-                    className="w-full h-full object-cover scale-105"
+                    className="w-full h-full object-cover origin-center"
+                    animate={{ scale: [1.02, 1.06, 1.02] }}
+                    transition={{ duration: 25, repeat: Infinity, ease: 'easeInOut' }}
                 />
                 <div
                     className="absolute inset-0 backdrop-blur-[2px]"
@@ -39,8 +41,8 @@ export default function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.9, ease: [0.25, 0.46, 0.45, 0.94] }}
                 >
-                    <span className="inline-block px-4 py-1.5 mb-2 sm:mb-4 text-[10px] sm:text-[11px] font-bold tracking-[0.25em] uppercase text-accent border border-accent/20 rounded-full bg-accent/[0.06] backdrop-blur-sm">
-                        Wagholi&apos;s #1 Fitness Center
+                    <span className="inline-block px-5 py-1.5 mb-2 sm:mb-4 text-[10px] sm:text-[11px] font-bold tracking-[0.2em] uppercase text-accent border border-accent/20 rounded-full bg-accent/[0.06] backdrop-blur-sm shadow-[0_0_15px_rgba(0,198,255,0.1)]">
+                        🏆 Rated among the top gyms in Wagholi, Pune
                     </span>
                     <div className="text-white hover:text-accent font-semibold text-xs sm:text-sm tracking-wide uppercase mb-5 sm:mb-8 animate-pulse">
                         <span className="bg-accent/20 px-3 py-1 rounded-full border border-accent/30 shadow-[0_0_15px_rgba(0,198,255,0.3)]">🔥 Limited Offer – Free Trial Available</span>
@@ -75,9 +77,9 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 25 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.9, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
-                    className="max-w-2xl mx-auto text-text-muted text-base sm:text-lg md:text-xl mb-6 sm:mb-10 leading-relaxed font-medium drop-shadow-sm"
+                    className="max-w-2xl mx-auto text-text-muted text-base sm:text-lg md:text-[1.15rem] mb-6 sm:mb-10 leading-relaxed font-medium drop-shadow-sm"
                 >
-                    Transform your body. Build confidence. Train like never before.
+                    This isn&apos;t just a gym. This is where your transformation begins.
                 </motion.p>
 
                 {/* CTA Buttons */}
@@ -89,7 +91,7 @@ export default function Hero() {
                 >
                     <button
                         onClick={() => handleScroll('#pricing')}
-                        className="group w-full sm:w-auto px-10 py-4 sm:py-5 min-h-[52px] bg-gradient-to-r from-accent to-[#0088cc] text-white font-black rounded-xl shadow-[0_0_20px_rgba(0,198,255,0.4)] hover:shadow-[0_0_35px_rgba(0,198,255,0.8)] transition-all duration-300 hover:scale-[1.05] active:scale-[0.97] flex items-center justify-center gap-3 uppercase tracking-wider text-[14px]"
+                        className="group w-full sm:w-auto px-10 py-4 sm:py-5 min-h-[52px] bg-gradient-to-r from-accent to-[#0088cc] text-white font-black rounded-xl shadow-[0_0_20px_rgba(0,198,255,0.4)] hover:shadow-[0_0_35px_rgba(0,198,255,0.8)] transition-all duration-300 hover:scale-[1.03] active:scale-[0.97] flex items-center justify-center gap-3 uppercase tracking-wider text-[14px]"
                     >
                         Book Free Trial
                         <FaPlay className="text-[11px] group-hover:translate-x-1.5 transition-transform duration-300" />

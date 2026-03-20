@@ -35,7 +35,7 @@ export default function Schedule() {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 })
 
     return (
-        <section className="py-16 sm:py-24 lg:py-36" ref={ref}>
+        <section className="py-8 md:py-12" ref={ref}>
             <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
                 <motion.div
                     {...fadeUp()}

@@ -41,7 +41,7 @@ export default function Amenities() {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 })
 
     return (
-        <section className="py-16 sm:py-24 lg:py-36 relative ambient-glow" ref={ref}>
+        <section className="py-8 md:py-12 relative ambient-glow" ref={ref}>
             <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
                 <motion.div
                     {...fadeUp()}
@@ -64,7 +64,7 @@ export default function Amenities() {
                             animate={inView ? fadeUp(0.08 + 0.08 * i).animate : {}}
                             className="group flex items-start gap-5 premium-card glow-hover p-7"
                         >
-                            <div className="relative z-10 shrink-0 w-14 h-14 rounded-2xl bg-accent/[0.08] text-accent flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-all duration-500 group-hover:shadow-lg group-hover:shadow-accent/20">
+                            <div className="relative z-10 shrink-0 w-14 h-14 rounded-2xl bg-accent/[0.08] text-accent flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-all duration-300 group-hover:shadow-lg group-hover:shadow-accent/20">
                                 <item.icon className="text-2xl" />
                             </div>
                             <div className="relative z-10">

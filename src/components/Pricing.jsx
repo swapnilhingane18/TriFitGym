@@ -76,7 +76,7 @@ export default function Pricing() {
                         Membership <span className="gradient-text">Plans</span>
                     </h2>
                     <p className="max-w-2xl mx-auto text-text-muted text-base lg:text-lg font-light mb-6">
-                        Flexible plans designed to fit your lifestyle.
+                        Flexible plans designed to fit your lifestyle. Perfect for beginners and advanced members alike.
                     </p>
                     <div className="inline-block px-5 py-2 bg-accent/10 border border-accent/20 rounded-full text-[#00C6FF] text-[13px] font-bold tracking-wide animate-pulse shadow-[0_0_15px_rgba(0,198,255,0.15)]">
                         ⚡ Limited time offer for new members
@@ -89,9 +89,9 @@ export default function Pricing() {
                             key={plan.name}
                             {...fadeUp(0.1 + 0.12 * i)}
                             animate={inView ? fadeUp(0.1 + 0.12 * i).animate : {}}
-                            className={`relative group flex flex-col rounded-2xl p-8 lg:p-9 transition-all duration-500 glass-panel ${plan.popular
+                            className={`relative group flex flex-col rounded-2xl p-8 lg:p-9 transition-all duration-300 glass-panel ${plan.popular
                                     ? 'border-2 border-[#FACC15] shadow-[0_0_40px_rgba(250,204,21,0.25)] scale-105 md:scale-110 hover:shadow-[0_0_60px_rgba(250,204,21,0.45)] z-20 bg-gradient-to-b from-[#111827] to-[#0A0A0A]'
-                                    : 'hover:-translate-y-2'
+                                    : 'hover:-translate-y-1'
                                 }`}
                         >
                             {/* Popular badge */}
@@ -124,7 +124,7 @@ export default function Pricing() {
                             </ul>
 
                             <button
-                                className={`w-full py-4 rounded-xl font-bold text-[13px] uppercase tracking-[0.08em] transition-all duration-500 ${plan.popular
+                                className={`w-full py-4 rounded-xl font-bold text-[13px] uppercase tracking-[0.08em] transition-all duration-300 ${plan.popular
                                         ? 'bg-gradient-to-r from-[#FACC15] to-[#EAB308] text-black hover:shadow-[0_0_25px_rgba(250,204,21,0.5)] hover:scale-[1.03] active:scale-[0.98]'
                                         : 'bg-white/[0.04] border border-white/10 text-white hover:bg-white/[0.08] hover:border-white/20 hover:shadow-xl active:scale-[0.98]'
                                     }`}

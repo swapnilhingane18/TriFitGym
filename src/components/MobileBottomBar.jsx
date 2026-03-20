@@ -4,37 +4,26 @@ export default function MobileBottomBar() {
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden">
       <div className="bg-dark/90 backdrop-blur-xl border-t border-white/[0.06] shadow-[0_-4px_30px_rgba(0,0,0,0.5)]">
-        <div className="flex items-center justify-between gap-2 px-3 py-2.5 max-w-lg mx-auto">
-          {/* WhatsApp */}
-          <a
-            href="https://wa.me/919730091331?text=Hi,%20I%20want%20to%20join%20Royal%20Fitness%20Gym"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 flex items-center justify-center gap-2 py-3 bg-green-600 text-white font-bold text-[12px] uppercase tracking-wider rounded-xl active:scale-[0.96] transition-transform"
-          >
-            <FaWhatsapp className="text-base" />
-            WhatsApp
-          </a>
-
-          {/* Call */}
+        <div className="flex items-center justify-between gap-3 px-4 py-3 max-w-lg mx-auto">
+          {/* Call Now */}
           <a
             href="tel:+919730091331"
-            className="flex-1 flex items-center justify-center gap-2 py-3 bg-white/[0.06] border border-white/10 text-white font-bold text-[12px] uppercase tracking-wider rounded-xl active:scale-[0.96] transition-transform"
+            className="flex-1 flex items-center justify-center gap-2 py-3.5 glass-panel text-white font-bold text-[13px] uppercase tracking-wider rounded-xl active:scale-[0.96] transition-transform shadow-lg"
           >
-            <FaPhoneAlt className="text-xs" />
+            <FaPhoneAlt className="text-sm text-accent" />
             Call Now
           </a>
 
-          {/* Join Now */}
+          {/* Free Trial */}
           <a
             href="#pricing"
             onClick={(e) => {
               e.preventDefault()
               document.querySelector('#pricing')?.scrollIntoView({ behavior: 'smooth' })
             }}
-            className="flex-1 flex items-center justify-center py-3 bg-gradient-to-r from-accent to-red-800 text-white font-bold text-[12px] uppercase tracking-wider rounded-xl active:scale-[0.96] transition-transform shadow-lg shadow-accent/20"
+            className="flex-1 flex items-center justify-center py-3.5 bg-gradient-to-r from-accent to-[#0088cc] text-white font-bold text-[13px] uppercase tracking-wider rounded-xl hover:shadow-[0_0_15px_rgba(0,198,255,0.4)] active:scale-[0.96] transition-all duration-300"
           >
-            Join Now
+            Free Trial
           </a>
         </div>
       </div>
