@@ -14,15 +14,15 @@ export default function TrustBar() {
                     {features.map((f, i) => {
                         const Icon = f.icon
                         return (
-                            <div key={i} className="flex items-center justify-center gap-4 px-6 py-4 hover:bg-white/[0.02] transition-colors duration-300">
-                                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0 border border-accent/20 text-accent shadow-[0_0_10px_rgba(0,198,255,0.2)]">
-                                    <Icon className="text-xl" />
+                            <div key={i} className="flex items-center gap-4 px-6 py-4 hover:bg-white/[0.02] transition-colors duration-300">
+                                <div className="w-10 h-10 flex items-center justify-center rounded-full bg-[#00C6FF]/10 shrink-0">
+                                    <Icon className="w-5 h-5 text-[#00C6FF]" />
                                 </div>
-                                <div className="flex flex-col">
-                                    <span className="font-montserrat font-bold text-lg text-white tracking-wide leading-tight">
+                                <div className="flex flex-col text-left">
+                                    <span className="text-white font-semibold leading-tight">
                                         {f.text}
                                     </span>
-                                    <span className="text-xs text-text-muted mt-0.5">{f.desc}</span>
+                                    <span className="text-sm text-gray-400 leading-tight mt-0.5">{f.desc}</span>
                                 </div>
                             </div>
                         )
