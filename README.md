@@ -15,7 +15,7 @@ A high-end, dark-themed fitness website built for **TRIFIT Fitness Centre, Wagho
 
 ## ⚡ Live Preview
 
-live link https://trifit-wagholi.netlify.app/
+live link https://trifitgym.netlify.app/
 
 > **Run locally:** `npm install && npm run dev` → [http://localhost:5173](http://localhost:5173)
 
