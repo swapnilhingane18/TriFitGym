@@ -89,7 +89,7 @@ export default function Navbar() {
                             <a
                                 href="#pricing"
                                 onClick={(e) => handleClick(e, '#pricing')}
-                                className="ml-4 px-7 py-2.5 bg-gradient-to-r from-accent to-red-700 text-white text-[13px] font-bold uppercase tracking-wider rounded-lg hover:shadow-lg hover:shadow-accent/25 transition-all duration-400 hover:scale-[1.04] active:scale-[0.98]"
+                                className="ml-4 px-7 py-2.5 bg-gradient-to-r from-accent to-[#0088cc] text-white text-[13px] font-bold uppercase tracking-wider rounded-lg hover:shadow-lg hover:shadow-accent/25 transition-all duration-400 hover:scale-[1.04] active:scale-[0.98]"
                             >
                                 Join Now
                             </a>
@@ -167,7 +167,7 @@ export default function Navbar() {
                                     initial={{ opacity: 0, y: 10 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.35 }}
-                                    className="block text-center mt-5 px-6 py-4 bg-gradient-to-r from-accent to-red-700 text-white font-bold rounded-xl uppercase tracking-wider text-sm active:scale-[0.97] transition-transform"
+                                    className="block text-center mt-5 px-6 py-4 bg-gradient-to-r from-accent to-[#0088cc] text-white font-bold rounded-xl uppercase tracking-wider text-sm active:scale-[0.97] transition-transform"
                                 >
                                     Join Now
                                 </motion.a>

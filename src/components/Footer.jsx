@@ -21,7 +21,7 @@ export default function Footer() {
 
     return (
         <footer className="relative bg-[#0c0c0c] border-t border-border">
-            <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 py-20">
+            <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 py-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
                     {/* Brand */}
                     <div className="lg:col-span-2">
@@ -105,7 +105,7 @@ export default function Footer() {
             <div className="border-t border-border/60">
                 <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 py-7 flex flex-col sm:flex-row items-center justify-between gap-4">
                     <p className="text-text-dim text-[11px] text-center sm:text-left tracking-wide">
-                        © {new Date().getFullYear()} Royal Fitness Gym. All rights reserved.
+                        © {new Date().getFullYear()} TRIFIT Fitness Centre. All rights reserved.
                     </p>
                     <p className="text-text-dim text-[11px] flex items-center gap-1.5 tracking-wide">
                         Made with <FaHeart className="text-accent text-[9px]" /> in Pune, India
