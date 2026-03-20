@@ -27,7 +27,7 @@ export default function About() {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.15 })
 
     return (
-        <section id="about" className="py-8 md:py-12 relative ambient-glow" ref={ref}>
+        <section id="about" className="mt-8 md:mt-10 py-8 md:py-12 relative ambient-glow" ref={ref}>
             <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
                 {/* Header */}
                 <motion.div
@@ -48,14 +48,14 @@ export default function About() {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={inView ? { opacity: 1, y: 0 } : {}}
                                 transition={{ duration: 0.4, delay: 0.2 + idx * 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
-                                className="group flex items-start gap-3 text-left bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl p-4 md:p-5 shadow-[0_0_20px_rgba(0,198,255,0.1)] transition-all duration-300 hover:-translate-y-1 hover:bg-white/10"
+                                className="group flex items-start gap-3 text-left bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl p-3 md:p-5 shadow-[0_0_20px_rgba(0,198,255,0.1)] transition-all duration-300 hover:-translate-y-1 hover:bg-white/10"
                             >
                                 <div className="shrink-0 w-10 h-10 flex items-center justify-center bg-[#00C6FF]/10 text-[#00C6FF] rounded-lg group-hover:text-white group-hover:bg-[#00C6FF]/20 transition-colors duration-300">
                                     <feat.icon className="w-5 h-5" />
                                 </div>
                                 <div className="flex-1">
-                                    <h3 className="font-semibold text-white text-base leading-tight">{feat.title}</h3>
-                                    <p className="text-sm text-gray-400 mt-1">{feat.desc}</p>
+                                    <h3 className="font-semibold text-white text-[15px] md:text-base leading-tight">{feat.title}</h3>
+                                    <p className="text-[13px] md:text-sm text-gray-400 mt-1">{feat.desc}</p>
                                 </div>
                             </motion.div>
                         ))}
@@ -63,7 +63,7 @@ export default function About() {
                 </motion.div>
 
                 {/* Stats Grid */}
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
+                <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
                     {stats.map((stat, i) => (
                         <motion.div
                             key={stat.label}

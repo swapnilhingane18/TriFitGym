@@ -49,7 +49,7 @@ export default function Hero() {
                 >
                     Train in Wagholi’s Most
                     <br />
-                    <span className="text-accent">Premium</span> <span className="text-[#FACC15]">Fitness Space</span>
+                    <span className="text-accent">Premium</span> <span className="text-white">Fitness Space</span>
                 </motion.h1>
 
                 <motion.p
@@ -79,7 +79,7 @@ export default function Hero() {
                         <FaPlay className="text-[10px] group-hover:translate-x-1 transition-transform duration-300" />
                     </button>
                     
-                    <p className="text-[#E5E7EB] text-[11px] mt-4 font-bold tracking-[0.15em] uppercase opacity-90">
+                    <p className="hidden md:block text-[#E5E7EB] text-[11px] mt-4 font-bold tracking-[0.15em] uppercase opacity-90">
                         ⚡ Limited slots &bull; Quick signup &bull; No commitment
                     </p>
                 </motion.div>
@@ -93,7 +93,7 @@ export default function Hero() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 2, duration: 1 }}
-                className="absolute bottom-8 left-1/2 -translate-x-1/2"
+                className="hidden md:block absolute bottom-8 left-1/2 -translate-x-1/2"
             >
                 <motion.div
                     animate={{ y: [0, 8, 0] }}

@@ -20,7 +20,7 @@ export default function Gallery() {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.08 })
 
     return (
-        <section id="gallery" className="py-8 md:py-12" ref={ref}>
+        <section id="gallery" className="mt-8 md:mt-10 py-8 md:py-12" ref={ref}>
             <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
                 <motion.div
                     {...fadeUp()}
@@ -47,7 +47,7 @@ export default function Gallery() {
                             initial={{ opacity: 0, scale: 0.92 }}
                             animate={inView ? { opacity: 1, scale: 1 } : {}}
                             transition={{ duration: 0.5, delay: 0.04 * i, ease: [0.25, 0.46, 0.45, 0.94] }}
-                            className="group relative rounded-xl overflow-hidden cursor-pointer bg-dark transform transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,198,255,0.2)]"
+                            className={`group relative rounded-xl overflow-hidden cursor-pointer bg-dark transform transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,198,255,0.2)] ${i > 3 ? 'hidden md:block' : 'block'}`}
                         >
                             <img
                                 src={img.src}

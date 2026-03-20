@@ -43,7 +43,7 @@ export default function Testimonials() {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 })
 
     return (
-        <section className="py-8 md:py-12 relative" ref={ref}>
+        <section className="mt-8 md:mt-10 py-8 md:py-12 relative" ref={ref}>
             <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
                 <motion.div
                     {...fadeUp()}
@@ -64,7 +64,7 @@ export default function Testimonials() {
                             key={t.name}
                             {...fadeUp(0.08 + 0.08 * i)}
                             animate={inView ? fadeUp(0.08 + 0.08 * i).animate : {}}
-                            className={`group glass-panel glow-hover p-6 md:p-8 lg:p-9 relative rounded-2xl hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(0,198,255,0.15)] transition-all duration-300 ${i >= 2 ? 'hidden md:block' : 'block'}`}
+                            className={`group p-2 md:p-8 lg:p-9 relative hover:scale-[1.02] transition-all duration-300 ${i >= 2 ? 'hidden md:block' : 'block'}`}
                         >
                             <FaQuoteLeft className="absolute top-7 right-7 text-accent/[0.06] text-5xl" />
                             <div className="relative z-10">
@@ -72,7 +72,7 @@ export default function Testimonials() {
                                     {[...Array(5)].map((_, j) => (
                                         <FaStar
                                             key={j}
-                                            className={`text-[16px] ${j < t.rating ? 'text-[#FACC15] drop-shadow-[0_0_5px_rgba(234,179,8,0.6)]' : 'text-gray-700'}`}
+                                            className={`text-[15px] ${j < t.rating ? 'text-gray-100' : 'text-gray-700'}`}
                                         />
                                     ))}
                                     <span className="text-text-dim text-xs ml-1 font-medium">{t.rating}.0</span>

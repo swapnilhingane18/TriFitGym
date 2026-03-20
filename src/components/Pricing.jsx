@@ -63,7 +63,7 @@ export default function Pricing() {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 })
 
     return (
-        <section id="pricing" className="py-8 md:py-12 relative ambient-glow" ref={ref}>
+        <section id="pricing" className="mt-8 md:mt-10 py-8 md:py-12 relative ambient-glow" ref={ref}>
             <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
                 <motion.div
                     {...fadeUp()}
@@ -90,9 +90,9 @@ export default function Pricing() {
                             key={plan.name}
                             {...fadeUp(0.1 + 0.12 * i)}
                             animate={inView ? fadeUp(0.1 + 0.12 * i).animate : {}}
-                            className={`relative group flex flex-col rounded-2xl p-5 md:p-8 lg:p-9 transition-all duration-300 glass-panel ${plan.popular
-                                    ? 'border-2 border-[#FACC15] shadow-[0_0_40px_rgba(250,204,21,0.25)] scale-[1.02] md:scale-110 hover:shadow-[0_0_60px_rgba(250,204,21,0.45)] z-20 bg-gradient-to-b from-[#111827] to-[#0A0A0A]'
-                                    : 'hover:-translate-y-1'
+                            className={`relative group flex flex-col rounded-2xl p-6 md:p-8 lg:p-9 transition-all duration-300 glass-panel ${!plan.popular ? 'hidden md:flex hover:-translate-y-1' : ''} ${plan.popular
+                                    ? 'border-2 border-[#FACC15] shadow-[0_0_40px_rgba(250,204,21,0.25)] scale-[1.02] md:scale-110 md:hover:shadow-[0_0_60px_rgba(250,204,21,0.45)] z-20 bg-gradient-to-b from-[#111827] to-[#0A0A0A]'
+                                    : ''
                                 }`}
                         >
                             {/* Popular badge */}
