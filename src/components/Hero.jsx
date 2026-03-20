@@ -34,6 +34,7 @@ export default function Hero() {
             {/* Ambient glows */}
             <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-accent/[0.07] rounded-full blur-[120px] animate-pulse pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-[600px] h-[400px] bg-accent/[0.04] rounded-full blur-[100px] pointer-events-none" />
+            <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-[500px] bg-gradient-to-b from-transparent via-[#00C6FF]/[0.03] to-transparent blur-3xl pointer-events-none" />
 
             {/* Content */}
             <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 text-center pt-20">
@@ -73,7 +74,7 @@ export default function Hero() {
                             handleScroll('#pricing');
                             trackLeadEvent('free_trial_click', { location: 'hero' });
                         }}
-                        className="group w-full sm:w-auto px-12 py-4 min-h-[52px] bg-gradient-to-r from-accent to-[#0088cc] text-white font-black rounded-xl shadow-[0_0_20px_rgba(0,198,255,0.4)] hover:shadow-[0_0_35px_rgba(0,198,255,0.8)] transition-all duration-300 active:scale-[0.96] flex items-center justify-center gap-2 uppercase tracking-wider text-[14px]"
+                        className="group w-full sm:w-auto px-12 md:px-14 py-5 md:py-4 min-h-[60px] md:min-h-[56px] bg-gradient-to-r from-accent to-[#0088cc] text-white font-black rounded-xl shadow-[0_0_30px_rgba(0,198,255,0.5)] hover:shadow-[0_0_40px_rgba(0,198,255,0.8)] transition-all duration-300 active:scale-[0.96] flex items-center justify-center gap-2 uppercase tracking-wider text-[15px]"
                     >
                         Book Free Trial
                         <FaPlay className="text-[10px] group-hover:translate-x-1 transition-transform duration-300" />
