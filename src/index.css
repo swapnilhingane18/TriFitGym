@@ -265,3 +265,15 @@ html, body {
 body {
   -webkit-overflow-scrolling: touch;
 }
+
+/* ═══════════════════════════════════
+   Global Image Fade-In
+   ═══════════════════════════════════ */
+img {
+  animation: imgFadeIn 0.3s ease-in-out;
+}
+
+@keyframes imgFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
