@@ -62,7 +62,7 @@ export default function Pricing() {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 })
 
     return (
-        <section id="pricing" className="py-16 sm:py-24 lg:py-36 relative ambient-glow" ref={ref}>
+        <section id="pricing" className="py-8 md:py-12 relative ambient-glow" ref={ref}>
             <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
                 <motion.div
                     {...fadeUp()}
@@ -75,9 +75,12 @@ export default function Pricing() {
                     <h2 className="font-montserrat font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-[3.25rem] mt-5 mb-7 leading-tight tracking-tight">
                         Membership <span className="gradient-text">Plans</span>
                     </h2>
-                    <p className="max-w-2xl mx-auto text-text-muted text-base lg:text-lg font-light">
-                        Flexible plans designed to fit your lifestyle. Start anytime, cancel anytime.
+                    <p className="max-w-2xl mx-auto text-text-muted text-base lg:text-lg font-light mb-6">
+                        Flexible plans designed to fit your lifestyle.
                     </p>
+                    <div className="inline-block px-5 py-2 bg-accent/10 border border-accent/20 rounded-full text-[#00C6FF] text-[13px] font-bold tracking-wide animate-pulse shadow-[0_0_15px_rgba(0,198,255,0.15)]">
+                        ⚡ Limited time offer for new members
+                    </div>
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-7 lg:gap-8 items-stretch">
@@ -86,16 +89,16 @@ export default function Pricing() {
                             key={plan.name}
                             {...fadeUp(0.1 + 0.12 * i)}
                             animate={inView ? fadeUp(0.1 + 0.12 * i).animate : {}}
-                            className={`relative group flex flex-col rounded-2xl p-8 lg:p-9 transition-all duration-500 ${plan.popular
-                                    ? 'bg-gradient-to-b from-[#1a1010] to-card border-2 border-accent/40 shadow-2xl shadow-accent/15 md:scale-[1.05] hover:shadow-[0_0_60px_rgba(255,44,44,0.2)] pricing-popular-glow'
-                                    : 'premium-card hover:-translate-y-2'
+                            className={`relative group flex flex-col rounded-2xl p-8 lg:p-9 transition-all duration-500 glass-panel ${plan.popular
+                                    ? 'border-2 border-[#FACC15] shadow-[0_0_40px_rgba(250,204,21,0.25)] scale-105 md:scale-110 hover:shadow-[0_0_60px_rgba(250,204,21,0.45)] z-20 bg-gradient-to-b from-[#111827] to-[#0A0A0A]'
+                                    : 'hover:-translate-y-2'
                                 }`}
                         >
                             {/* Popular badge */}
                             {plan.popular && (
-                                <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-5 py-1.5 bg-gradient-to-r from-accent to-red-800 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] flex items-center gap-1.5 shadow-xl shadow-accent/25 whitespace-nowrap">
-                                    <FaCrown className="text-yellow-300 text-[10px]" />
-                                    Most Popular
+                                <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-5 py-1.5 bg-gradient-to-r from-[#FACC15] to-[#EAB308] rounded-full text-black font-black uppercase tracking-[0.2em] flex items-center gap-1.5 shadow-[0_0_20px_rgba(250,204,21,0.4)] whitespace-nowrap">
+                                    <FaCrown className="text-black text-[12px]" />
+                                    MOST POPULAR
                                 </div>
                             )}
 
@@ -121,13 +124,17 @@ export default function Pricing() {
                             </ul>
 
                             <button
-                                className={`w-full py-4 rounded-xl font-bold text-[13px] uppercase tracking-[0.15em] transition-all duration-500 ${plan.popular
-                                        ? 'bg-gradient-to-r from-accent to-red-800 text-white hover:shadow-xl hover:shadow-accent/30 hover:scale-[1.02] active:scale-[0.98]'
-                                        : 'bg-white/[0.04] border border-border text-white hover:bg-accent hover:border-accent hover:shadow-xl hover:shadow-accent/20 active:scale-[0.98]'
+                                className={`w-full py-4 rounded-xl font-bold text-[13px] uppercase tracking-[0.08em] transition-all duration-500 ${plan.popular
+                                        ? 'bg-gradient-to-r from-[#FACC15] to-[#EAB308] text-black hover:shadow-[0_0_25px_rgba(250,204,21,0.5)] hover:scale-[1.03] active:scale-[0.98]'
+                                        : 'bg-white/[0.04] border border-white/10 text-white hover:bg-white/[0.08] hover:border-white/20 hover:shadow-xl active:scale-[0.98]'
                                     }`}
                             >
-                                Get Started
+                                Start Your Transformation
                             </button>
+                            {/* Reassurance */}
+                            <p className="text-center text-text-dim text-[10px] mt-4 uppercase tracking-[0.15em] font-medium">
+                                No long-term commitment &bull; Cancel anytime
+                            </p>
                         </motion.div>
                     ))}
                 </div>
