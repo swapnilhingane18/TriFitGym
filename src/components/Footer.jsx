@@ -28,7 +28,7 @@ export default function Footer() {
                         <a href="#home" className="flex items-center gap-2.5 mb-5">
                             <FaDumbbell className="text-accent text-2xl" />
                             <span className="font-montserrat font-extrabold text-xl tracking-tight">
-                                ROYAL <span className="text-accent">FITNESS</span>
+                                TRI<span className="text-accent">FIT</span>
                             </span>
                         </a>
                         <p className="text-[#00C6FF] font-bold text-sm mb-2 uppercase tracking-wide">

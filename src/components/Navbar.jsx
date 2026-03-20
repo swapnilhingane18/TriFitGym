@@ -69,8 +69,8 @@ export default function Navbar() {
                                 <FaDumbbell className="text-accent text-xl md:text-2xl group-hover:rotate-12 transition-transform duration-300" />
                                 <div className="absolute inset-0 bg-accent/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                             </div>
-                            <span className="font-montserrat font-extrabold text-lg md:text-xl tracking-tight">
-                                ROYAL <span className="text-accent">FITNESS</span>
+                            <span className="font-montserrat font-extrabold text-xl sm:text-2xl tracking-tight text-white flex items-center">
+                                TRI<span className="text-accent">FIT</span>
                             </span>
                         </a>
 

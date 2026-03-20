@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🏋️ Royal Fitness Gym — Premium Website
+# 🏋️ TRIFIT Fitness Centre — Premium Website
 
-A high-end, dark-themed fitness website built for **Royal Fitness Gym, Wagholi, Pune** to attract new gym members and showcase premium facilities.
+A high-end, dark-themed fitness website built for **TRIFIT Fitness Centre, Wagholi, Pune** to attract new gym members and showcase premium facilities.
 
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white)
@@ -15,7 +15,7 @@ A high-end, dark-themed fitness website built for **Royal Fitness Gym, Wagholi, 
 
 ## ⚡ Live Preview
 
-live link https://royalfitnessgymwagholi.netlify.app/
+live link https://trifit-wagholi.netlify.app/
 
 > **Run locally:** `npm install && npm run dev` → [http://localhost:5173](http://localhost:5173)
 
@@ -70,7 +70,7 @@ Counters:     React CountUp + Intersection Observer
 ## 📁 Project Structure
 
 ```
-royal-fitness/
+trifit/
 ├── index.html                # Entry HTML with Google Fonts & SEO meta
 ├── vite.config.js            # Vite + Tailwind plugin config
 ├── postcss.config.js         # PostCSS override
