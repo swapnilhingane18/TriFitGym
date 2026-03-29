@@ -20,8 +20,8 @@ export default function Gallery() {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.08 })
 
     return (
-        <section id="gallery" className="mt-10 md:mt-16 py-8 md:py-12 bg-white/[0.02] border-y border-white/[0.02]" ref={ref}>
-            <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+        <section id="gallery" className="mt-6 md:mt-16 py-10 md:py-12 bg-white/[0.02] border-y border-white/[0.02]" ref={ref}>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div
                     {...fadeUp()}
                     animate={inView ? fadeUp().animate : {}}

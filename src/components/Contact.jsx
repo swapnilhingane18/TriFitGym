@@ -20,8 +20,8 @@ export default function Contact() {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 })
 
     return (
-        <section id="contact" className="py-8 md:py-12" ref={ref}>
-            <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+        <section id="contact" className="py-10 md:py-12" ref={ref}>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div
                     {...fadeUp()}
                     animate={inView ? fadeUp().animate : {}}

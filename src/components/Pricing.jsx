@@ -63,8 +63,8 @@ export default function Pricing() {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 })
 
     return (
-        <section id="pricing" className="mt-10 md:mt-16 py-8 md:py-12 relative ambient-glow bg-white/[0.02] border-y border-white/[0.02]" ref={ref}>
-            <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
+        <section id="pricing" className="mt-6 md:mt-16 py-10 md:py-12 relative ambient-glow bg-white/[0.02] border-y border-white/[0.02]" ref={ref}>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <motion.div
                     {...fadeUp()}
                     animate={inView ? fadeUp().animate : {}}

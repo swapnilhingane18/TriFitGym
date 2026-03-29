@@ -37,8 +37,8 @@ export default function FAQ() {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 })
 
     return (
-        <section className="py-8 md:py-12 relative ambient-glow" ref={ref}>
-            <div className="max-w-3xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
+        <section className="py-10 md:py-12 relative ambient-glow" ref={ref}>
+            <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <motion.div
                     {...fadeUp()}
                     animate={inView ? fadeUp().animate : {}}

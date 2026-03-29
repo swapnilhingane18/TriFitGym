@@ -8,8 +8,8 @@ const features = [
 
 export default function TrustBar() {
     return (
-        <section className="glass-panel border-y border-white/10 relative z-10 -mt-10 mx-5 sm:mx-8 rounded-2xl overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.5)]">
-            <div className="max-w-7xl mx-auto px-5 py-6 flex items-center">
+        <section className="glass-panel border-y border-white/10 relative z-10 -mt-10 mx-4 sm:mx-8 rounded-2xl overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.5)]">
+            <div className="max-w-7xl mx-auto px-4 py-5 sm:py-6 flex items-center">
                 <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-0 divide-y md:divide-y-0 md:divide-x divide-white/10">
                     {features.map((f, i) => {
                         const Icon = f.icon

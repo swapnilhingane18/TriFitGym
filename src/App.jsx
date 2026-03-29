@@ -21,17 +21,17 @@ import FreeTrialPopup from './components/FreeTrialPopup'
 import TrustBar from './components/TrustBar'
 
 const Divider = () => (
-    <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-[#00C6FF]/20 to-transparent my-6 shadow-[0_0_15px_rgba(0,198,255,0.05)] relative">
+    <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-[#00C6FF]/20 to-transparent my-4 md:my-6 shadow-[0_0_15px_rgba(0,198,255,0.05)] relative">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-dark rotate-45 border border-[#00C6FF]/30 shadow-[0_0_10px_rgba(0,198,255,0.2)]" />
     </div>
 )
 
 const FinalCTA = () => (
-    <section className="py-16 md:py-24 relative mt-8 md:mt-0 overflow-hidden flex items-center justify-center border-t border-white/[0.02] bg-gradient-to-b from-dark to-[#050505]">
+    <section className="py-12 md:py-24 relative mt-4 md:mt-0 overflow-hidden flex items-center justify-center border-t border-white/[0.02] bg-gradient-to-b from-dark to-[#050505]">
         <div className="absolute inset-0 bg-gradient-to-t from-[#00C6FF]/5 to-transparent pointer-events-none" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-accent/[0.03] rounded-full blur-[100px] pointer-events-none" />
         
-        <div className="relative z-10 text-center max-w-3xl mx-auto px-5">
+        <div className="relative z-10 text-center max-w-3xl mx-auto px-4 sm:px-6">
             <h2 className="font-montserrat font-black text-4xl sm:text-4xl md:text-5xl mb-4 tracking-tight drop-shadow-lg">
                 Ready to <span className="text-accent drop-shadow-[0_0_15px_rgba(0,198,255,0.4)]">Transform</span> Your Body?
             </h2>

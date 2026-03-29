@@ -27,13 +27,13 @@ export default function About() {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.15 })
 
     return (
-        <section id="about" className="mt-10 md:mt-16 py-8 md:py-12 relative ambient-glow" ref={ref}>
-            <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
+        <section id="about" className="mt-6 md:mt-16 py-10 md:py-12 relative ambient-glow" ref={ref}>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 {/* Header */}
                 <motion.div
                     {...fadeUp()}
                     animate={inView ? fadeUp().animate : {}}
-                    className="text-center mb-20"
+                    className="text-center mb-8 md:mb-16"
                 >
                     <span className="text-accent text-[11px] font-bold tracking-[0.25em] uppercase">
                         About Us
