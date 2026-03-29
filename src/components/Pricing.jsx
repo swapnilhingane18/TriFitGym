@@ -84,13 +84,13 @@ export default function Pricing() {
                     </div>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-7 lg:gap-8 items-stretch">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-7 lg:gap-8 items-stretch">
                     {plans.map((plan, i) => (
                         <motion.div
                             key={plan.name}
                             {...fadeUp(0.1 + 0.12 * i)}
                             animate={inView ? fadeUp(0.1 + 0.12 * i).animate : {}}
-                            className={`relative group flex flex-col rounded-2xl p-6 md:p-8 lg:p-9 transition-all duration-300 glass-panel ${!plan.popular ? 'hidden md:flex hover:-translate-y-1' : ''} ${plan.popular
+                            className={`relative group flex flex-col rounded-2xl p-5 md:p-8 lg:p-9 transition-all duration-300 glass-panel ${!plan.popular ? 'hidden md:flex hover:-translate-y-1' : ''} ${plan.popular
                                     ? 'border-2 border-[#FACC15] shadow-[0_0_40px_rgba(250,204,21,0.25)] scale-[1.02] md:scale-110 md:hover:shadow-[0_0_60px_rgba(250,204,21,0.45)] z-20 bg-gradient-to-b from-[#111827] to-[#0A0A0A]'
                                     : ''
                                 }`}
@@ -103,12 +103,12 @@ export default function Pricing() {
                                 </div>
                             )}
 
-                            <div className="mb-7">
+                            <div className="mb-5 md:mb-7">
                                 <h3 className="font-montserrat font-bold text-lg mb-2 tracking-tight">{plan.name}</h3>
                                 <p className="text-text-dim text-[13px] font-light">{plan.desc}</p>
                             </div>
 
-                            <div className="mb-8">
+                            <div className="mb-6 md:mb-8">
                                 <span className="font-montserrat font-black text-[3.25rem] text-white leading-none tracking-tight">
                                     ₹{plan.price}
                                 </span>

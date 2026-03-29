@@ -41,7 +41,7 @@ export default function About() {
                     <h2 className="font-montserrat font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-3 mb-4 md:mt-4 md:mb-6 leading-tight tracking-tight">
                         More Than Just a <span className="gradient-text">Gym</span>
                     </h2>
-                    <div className="max-w-4xl mx-auto mt-6 grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 px-2 md:px-0">
+                    <div className="max-w-4xl mx-auto mt-4 md:mt-6 grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 px-0">
                         {features.map((feat, idx) => (
                             <motion.div
                                 key={idx}

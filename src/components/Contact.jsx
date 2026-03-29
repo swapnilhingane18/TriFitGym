@@ -54,7 +54,7 @@ export default function Contact() {
                                 <Wrapper
                                     key={item.title}
                                     {...(item.link ? { href: item.link, target: '_blank', rel: 'noopener noreferrer' } : {})}
-                                    className="group flex items-center gap-5 premium-card glow-hover p-6 cursor-pointer"
+                                    className="group flex items-center gap-4 premium-card glow-hover p-4 md:p-6 cursor-pointer"
                                     onClick={item.title === 'Phone' ? () => trackLeadEvent('call_click', { location: 'contact_page' }) : undefined}
                                 >
                                     <div className="relative z-10 shrink-0 w-13 h-13 rounded-xl bg-accent/[0.08] text-accent flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-all duration-300 group-hover:shadow-lg group-hover:shadow-accent/20">

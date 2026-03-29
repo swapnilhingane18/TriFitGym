@@ -58,17 +58,17 @@ export default function Testimonials() {
                     </h2>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-7">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-7">
                     {testimonials.map((t, i) => (
                         <motion.div
                             key={t.name}
                             {...fadeUp(0.08 + 0.08 * i)}
                             animate={inView ? fadeUp(0.08 + 0.08 * i).animate : {}}
-                            className={`group bg-white/5 rounded-2xl p-5 md:p-8 lg:p-9 border border-white/[0.04] shadow-[0_0_20px_rgba(0,0,0,0.5)] relative hover:scale-[1.02] transition-all duration-300 ${i >= 2 ? 'hidden md:block' : 'block'}`}
+                            className={`group bg-white/5 rounded-2xl p-4 md:p-8 lg:p-9 border border-white/[0.04] shadow-[0_0_20px_rgba(0,0,0,0.5)] relative hover:scale-[1.02] transition-all duration-300 ${i >= 2 ? 'hidden md:block' : 'block'}`}
                         >
                             <FaQuoteLeft className="absolute top-7 right-7 text-accent/[0.06] text-5xl" />
                             <div className="relative z-10">
-                                <div className="flex items-center gap-1.5 mb-5">
+                                <div className="flex items-center gap-1.5 mb-3 md:mb-5">
                                     {[...Array(5)].map((_, j) => (
                                         <FaStar
                                             key={j}
@@ -77,7 +77,7 @@ export default function Testimonials() {
                                     ))}
                                     <span className="text-text-dim text-xs ml-1 font-medium">{t.rating}.0</span>
                                 </div>
-                                <p className="text-text-muted leading-[1.8] mb-7 text-[13.5px] font-light">
+                                <p className="text-text-muted leading-[1.7] mb-4 md:mb-7 text-[13px] sm:text-[13.5px] font-light">
                                     &ldquo;{t.text}&rdquo;
                                 </p>
                                 <div className="flex items-center gap-4">
