@@ -18,9 +18,9 @@ const stats = [
 ]
 
 const fadeUp = (delay = 0) => ({
-    initial: { opacity: 0, y: 30 },
+    initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.7, delay, ease: [0.25, 0.46, 0.45, 0.94] },
+    transition: { duration: 0.45, delay, ease: [0.25, 0.46, 0.45, 0.94] },
 })
 
 export default function About() {

@@ -39,9 +39,9 @@ export default function Hero() {
             {/* Content */}
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 md:pt-24">
                 <motion.h1
-                    initial={{ opacity: 0, y: 35 }}
+                    initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.9, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
+                    transition={{ duration: 0.5, delay: 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
                     className="font-montserrat font-black text-[2rem] leading-[1.15] sm:text-[2.5rem] md:text-6xl lg:text-[5.5rem] md:leading-[1.1] mb-2 sm:mb-4 tracking-tight"
                     style={{
                         textShadow:
@@ -54,9 +54,9 @@ export default function Hero() {
                 </motion.h1>
 
                 <motion.p
-                    initial={{ opacity: 0, y: 25 }}
+                    initial={{ opacity: 0, y: 15 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.9, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
+                    transition={{ duration: 0.5, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
                     className="text-[#E5E7EB] text-[15px] sm:text-lg md:text-[1.15rem] mb-6 md:mb-8 font-semibold drop-shadow-sm uppercase tracking-wider leading-relaxed md:leading-normal"
                 >
                     Build muscle. Burn fat. Transform.
@@ -64,9 +64,9 @@ export default function Hero() {
 
                 {/* CTA Buttons */}
                 <motion.div
-                    initial={{ opacity: 0, y: 25 }}
+                    initial={{ opacity: 0, y: 15 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.9, delay: 0.45, ease: [0.25, 0.46, 0.45, 0.94] }}
+                    transition={{ duration: 0.5, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
                     className="w-full max-w-xs sm:max-w-none mx-auto"
                 >
                     <button
