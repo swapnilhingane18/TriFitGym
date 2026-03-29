@@ -21,8 +21,8 @@ export default function Footer() {
 
     return (
         <footer className="relative bg-[#0c0c0c] border-t border-border">
-            <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 py-12">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 lg:gap-16">
                     {/* Brand */}
                     <div className="lg:col-span-2">
                         <a href="#home" className="flex items-center gap-2.5 mb-5">
