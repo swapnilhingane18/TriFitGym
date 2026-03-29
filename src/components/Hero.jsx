@@ -57,7 +57,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 25 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.9, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
-                    className="text-[#E5E7EB] text-[15px] sm:text-lg md:text-[1.15rem] mb-8 font-semibold drop-shadow-sm uppercase tracking-wider"
+                    className="text-[#E5E7EB] text-[15px] sm:text-lg md:text-[1.15rem] mb-6 md:mb-8 font-semibold drop-shadow-sm uppercase tracking-wider leading-relaxed md:leading-normal"
                 >
                     Build muscle. Burn fat. Transform.
                 </motion.p>

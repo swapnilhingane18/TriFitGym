@@ -48,12 +48,12 @@ export default function Testimonials() {
                 <motion.div
                     {...fadeUp()}
                     animate={inView ? fadeUp().animate : {}}
-                    className="text-center mb-6 md:mb-10 sm:mb-8 md:mb-12"
+                    className="text-center mb-6 md:mb-10"
                 >
                     <span className="text-accent text-[11px] font-bold tracking-[0.25em] uppercase">
                         Testimonials
                     </span>
-                    <h2 className="font-montserrat font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-[3.25rem] mt-5 mb-7 leading-tight tracking-tight">
+                    <h2 className="font-montserrat font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-[3.25rem] mt-3 mb-4 md:mt-5 md:mb-7 leading-tight tracking-tight">
                         What Our Members <span className="gradient-text">Say</span>
                     </h2>
                 </motion.div>
