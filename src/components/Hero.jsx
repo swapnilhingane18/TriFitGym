@@ -86,7 +86,7 @@ export default function Hero() {
                 </motion.div>
 
                 {/* Space maintained for TrustBar below */}
-                <div className="pb-16 md:pb-0" />
+                <div className="pb-12 md:pb-0" />
             </div>
 
             {/* Scroll indicator */}

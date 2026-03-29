@@ -41,7 +41,7 @@ export default function Contact() {
                     </p>
                 </motion.div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 sm:gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-7 sm:gap-8">
                     {/* Contact Cards */}
                     <motion.div
                         {...fadeUp(0.2)}
@@ -71,7 +71,7 @@ export default function Contact() {
                         })}
 
                         {/* CTA */}
-                        <div className="bg-white/5 backdrop-blur rounded-xl p-4 mt-10 text-center border border-white/10">
+                        <div className="bg-white/5 backdrop-blur rounded-xl p-4 mt-5 md:mt-8 text-center border border-white/10">
                             <p className="font-montserrat font-bold text-[15px] sm:text-base mb-3 tracking-tight text-white">
                                 Ready to Start Your Transformation?
                             </p>

@@ -14,7 +14,7 @@ export default function TrustBar() {
                     {features.map((f, i) => {
                         const Icon = f.icon
                         return (
-                            <div key={i} className="flex items-center gap-4 px-6 py-4 hover:bg-white/[0.02] transition-colors duration-300">
+                            <div key={i} className="flex items-center gap-4 px-4 py-3 md:px-6 md:py-4 hover:bg-white/[0.02] transition-colors duration-300">
                                 <div className="w-10 h-10 flex items-center justify-center rounded-full bg-[#00C6FF]/10 shrink-0">
                                     <Icon className="w-5 h-5 text-[#00C6FF]" />
                                 </div>
