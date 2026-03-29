@@ -1,4 +1,4 @@
-import { FaDumbbell, FaInstagram, FaFacebookF, FaYoutube, FaTwitter, FaHeart, FaArrowUp } from 'react-icons/fa'
+import { FaDumbbell, FaInstagram, FaFacebookF, FaYoutube, FaTwitter, FaArrowUp } from 'react-icons/fa'
 
 const quickLinks = [
     { name: 'Home', href: '#home' },
@@ -111,7 +111,7 @@ export default function Footer() {
                         © {new Date().getFullYear()} TRIFIT Fitness Centre. All rights reserved.
                     </p>
                     <p className="text-text-dim text-[11px] flex items-center gap-1.5 tracking-wide">
-                        Made with <FaHeart className="text-accent text-[9px]" /> in Pune, India
+                        Made by Swapnil Hingane
                     </p>
                 </div>
             </div>
