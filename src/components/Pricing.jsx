@@ -126,7 +126,7 @@ export default function Pricing() {
 
                             <button
                                 onClick={() => trackLeadEvent('free_trial_click', { location: 'pricing_tier', plan: plan.name })}
-                                className={`w-full py-3.5 min-h-[44px] rounded-xl font-black uppercase tracking-wider text-[13px] md:text-sm transition-all duration-300 active:scale-[0.96] ${plan.popular
+                                className={`w-full py-3.5 min-h-[48px] rounded-xl font-black uppercase tracking-wider text-[13px] md:text-sm transition-all duration-300 active:scale-[0.96] ${plan.popular
                                         ? 'bg-[#FACC15] text-[#0A0A0A] hover:bg-white hover:shadow-[0_0_25px_rgba(250,204,21,0.6)]'
                                         : 'bg-white/5 border border-white/10 text-white hover:bg-white/10 hover:border-white/20'
                                     }`}

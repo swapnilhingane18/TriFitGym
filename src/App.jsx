@@ -41,13 +41,13 @@ const FinalCTA = () => (
             <p className="text-text-muted text-[15px] mb-8 font-light max-w-xl mx-auto md:hidden">
                 Join today and start your journey.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center mb-8 md:mb-10 w-full max-w-[280px] sm:max-w-none mx-auto">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center mb-8 md:mb-10 w-full max-w-xs sm:max-w-none mx-auto">
                 <button
                     onClick={() => {
                         document.querySelector('#pricing')?.scrollIntoView({ behavior: 'smooth' });
                         trackLeadEvent('free_trial_click', { location: 'final_cta' });
                     }}
-                    className="w-full sm:w-auto px-10 py-5 md:py-3.5 min-h-[56px] md:min-h-[44px] bg-gradient-to-r from-[#00C6FF] to-[#0072ff] text-white font-black rounded-xl shadow-[0_0_20px_rgba(0,198,255,0.4)] hover:shadow-[0_0_35px_rgba(0,198,255,0.8)] transition-all duration-300 active:scale-[0.96] uppercase tracking-wider text-[15px] md:text-[13px] leading-none"
+                    className="w-full sm:w-auto px-10 py-4 min-h-[52px] md:min-h-[44px] bg-gradient-to-r from-[#00C6FF] to-[#0072ff] text-white font-black rounded-xl shadow-[0_0_20px_rgba(0,198,255,0.4)] hover:shadow-[0_0_35px_rgba(0,198,255,0.8)] transition-all duration-300 active:scale-[0.96] uppercase tracking-wider text-[14px] md:text-[13px] leading-none"
                 >
                     Book Free Trial
                 </button>

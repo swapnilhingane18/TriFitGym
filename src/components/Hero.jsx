@@ -67,14 +67,14 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 25 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.9, delay: 0.45, ease: [0.25, 0.46, 0.45, 0.94] }}
-                    className="w-full max-w-[280px] sm:max-w-none mx-auto"
+                    className="w-full max-w-xs sm:max-w-none mx-auto"
                 >
                     <button
                         onClick={() => {
                             handleScroll('#pricing');
                             trackLeadEvent('free_trial_click', { location: 'hero' });
                         }}
-                        className="group w-full sm:w-auto px-12 md:px-14 py-5 md:py-4 min-h-[60px] md:min-h-[56px] bg-gradient-to-r from-accent to-[#0088cc] text-white font-black rounded-xl shadow-[0_0_30px_rgba(0,198,255,0.5)] hover:shadow-[0_0_40px_rgba(0,198,255,0.8)] transition-all duration-300 active:scale-[0.96] flex items-center justify-center gap-2 uppercase tracking-wider text-[15px]"
+                        className="group w-full sm:w-auto px-10 md:px-14 py-4 min-h-[52px] md:min-h-[56px] bg-gradient-to-r from-accent to-[#0088cc] text-white font-black rounded-xl shadow-[0_0_30px_rgba(0,198,255,0.5)] hover:shadow-[0_0_40px_rgba(0,198,255,0.8)] transition-all duration-300 active:scale-[0.96] flex items-center justify-center gap-2 uppercase tracking-wider text-[14px] sm:text-[15px]"
                     >
                         Book Free Trial
                         <FaPlay className="text-[10px] group-hover:translate-x-1 transition-transform duration-300" />

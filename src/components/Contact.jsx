@@ -79,7 +79,7 @@ export default function Contact() {
                                 <a
                                     href="tel:07219256076"
                                     onClick={() => trackLeadEvent('call_click', { location: 'contact_page' })}
-                                    className="w-full sm:flex-1 px-4 py-3 bg-gradient-to-r from-accent to-[#0088cc] text-white font-bold text-[13px] rounded-xl hover:shadow-[0_0_15px_rgba(0,198,255,0.3)] transition-all duration-300 active:scale-[0.98] uppercase tracking-wider text-center"
+                                    className="w-full sm:flex-1 px-4 py-3 min-h-[48px] bg-gradient-to-r from-accent to-[#0088cc] text-white font-bold text-[13px] rounded-xl hover:shadow-[0_0_15px_rgba(0,198,255,0.3)] transition-all duration-300 active:scale-[0.98] uppercase tracking-wider text-center flex items-center justify-center"
                                 >
                                     Call Now
                                 </a>
@@ -88,7 +88,7 @@ export default function Contact() {
                                         document.querySelector('#pricing')?.scrollIntoView({ behavior: 'smooth' });
                                         trackLeadEvent('free_trial_click', { location: 'contact_page' });
                                     }}
-                                    className="w-full sm:flex-1 px-4 py-3 bg-white/10 text-white font-bold text-[13px] rounded-xl hover:bg-white/20 transition-all duration-300 active:scale-[0.98] uppercase tracking-wider text-center border border-white/5"
+                                    className="w-full sm:flex-1 px-4 py-3 min-h-[48px] bg-white/10 text-white font-bold text-[13px] rounded-xl hover:bg-white/20 transition-all duration-300 active:scale-[0.98] uppercase tracking-wider text-center border border-white/5 flex items-center justify-center"
                                 >
                                     Free Trial
                                 </button>
