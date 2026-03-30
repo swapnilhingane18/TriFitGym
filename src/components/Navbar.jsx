@@ -170,7 +170,7 @@ export default function Navbar() {
                                     initial={{ opacity: 0, y: 10 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.35 }}
-                                    className="block text-center mt-5 px-6 py-4 bg-gradient-to-r from-accent to-[#0088cc] text-white font-bold rounded-xl uppercase tracking-wider text-sm active:scale-[0.97] transition-transform"
+                                    className="block text-center mt-5 px-6 py-4 min-h-[48px] bg-gradient-to-r from-accent to-[#0088cc] text-white font-bold rounded-xl uppercase tracking-wider text-sm active:scale-[0.97] transition-transform"
                                 >
                                     Join Now
                                 </motion.a>

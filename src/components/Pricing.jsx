@@ -109,7 +109,7 @@ export default function Pricing() {
                             </div>
 
                             <div className="mb-6 md:mb-8">
-                                <span className="font-montserrat font-black text-[3.25rem] text-white leading-none tracking-tight">
+                                <span className="font-montserrat font-black text-[2.5rem] md:text-[3.25rem] text-white leading-none tracking-tight">
                                     ₹{plan.price}
                                 </span>
                                 <span className="text-text-dim text-sm ml-1">{plan.period}</span>

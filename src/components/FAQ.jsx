@@ -62,9 +62,9 @@ export default function FAQ() {
                         >
                             <button
                                 onClick={() => setOpen(open === i ? null : i)}
-                                className="w-full flex items-center justify-between py-5 sm:py-6 text-left group"
+                                className="w-full flex items-center justify-between py-4 sm:py-6 text-left group min-h-[44px]"
                             >
-                                <span className="font-montserrat font-semibold text-[14px] sm:text-[15px] pr-4 group-hover:text-accent transition-colors duration-300 tracking-tight">
+                                <span className="font-montserrat font-semibold text-[13px] sm:text-[15px] pr-4 group-hover:text-accent transition-colors duration-300 tracking-tight leading-snug">
                                     {faq.q}
                                 </span>
                                 <span
