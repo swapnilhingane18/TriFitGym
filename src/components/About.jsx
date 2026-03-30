@@ -38,7 +38,7 @@ export default function About() {
                     <span className="text-accent text-[11px] font-bold tracking-[0.25em] uppercase">
                         About Us
                     </span>
-                    <h2 className="font-montserrat font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-3 mb-4 md:mt-4 md:mb-6 leading-tight tracking-tight">
+                    <h2 className="font-montserrat font-extrabold text-[1.375rem] sm:text-3xl md:text-4xl lg:text-5xl mt-2 mb-3 md:mt-4 md:mb-6 leading-tight tracking-tight">
                         More Than Just a <span className="gradient-text">Gym</span>
                     </h2>
                     <div className="max-w-4xl mx-auto mt-4 md:mt-6 grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 px-0">

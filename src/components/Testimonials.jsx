@@ -53,7 +53,7 @@ export default function Testimonials() {
                     <span className="text-accent text-[11px] font-bold tracking-[0.25em] uppercase">
                         Testimonials
                     </span>
-                    <h2 className="font-montserrat font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-[3.25rem] mt-3 mb-4 md:mt-5 md:mb-7 leading-tight tracking-tight">
+                    <h2 className="font-montserrat font-extrabold text-[1.375rem] sm:text-3xl md:text-4xl lg:text-[3.25rem] mt-2 mb-3 md:mt-5 md:mb-7 leading-tight tracking-tight">
                         What Our Members <span className="gradient-text">Say</span>
                     </h2>
                 </motion.div>
