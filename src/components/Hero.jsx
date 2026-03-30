@@ -11,7 +11,7 @@ export default function Hero() {
     return (
         <section
             id="home"
-            className="relative pt-24 pb-16 md:py-32 flex items-center justify-center overflow-hidden"
+            className="relative pt-20 pb-12 md:py-32 flex items-center justify-center overflow-hidden"
         >
             {/* Background */}
             <div className="absolute inset-0">
@@ -37,12 +37,12 @@ export default function Hero() {
             <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-[500px] bg-gradient-to-b from-transparent via-[#00C6FF]/[0.03] to-transparent blur-3xl pointer-events-none" />
 
             {/* Content */}
-            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 md:pt-24">
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-16 md:pt-24">
                 <motion.h1
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
-                    className="font-montserrat font-black text-[2rem] leading-[1.15] sm:text-[2.5rem] md:text-6xl lg:text-[5.5rem] md:leading-[1.1] mb-2 sm:mb-4 tracking-tight"
+                    className="font-montserrat font-black text-[1.625rem] leading-[1.2] sm:text-[2.5rem] md:text-6xl lg:text-[5.5rem] md:leading-[1.1] mb-3 sm:mb-4 tracking-tight"
                     style={{
                         textShadow:
                             '0 0 60px rgba(0, 198, 255, 0.2), 0 0 120px rgba(0, 198, 255, 0.08)',
@@ -57,7 +57,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 15 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
-                    className="text-[#E5E7EB] text-[15px] sm:text-lg md:text-[1.15rem] mb-6 md:mb-8 font-semibold drop-shadow-sm uppercase tracking-wider leading-relaxed md:leading-normal"
+                    className="text-[#E5E7EB] text-[13px] sm:text-lg md:text-[1.15rem] mb-5 md:mb-8 font-semibold drop-shadow-sm uppercase tracking-widest leading-relaxed md:leading-normal"
                 >
                     Build muscle. Burn fat. Transform.
                 </motion.p>
@@ -74,7 +74,7 @@ export default function Hero() {
                             handleScroll('#pricing');
                             trackLeadEvent('free_trial_click', { location: 'hero' });
                         }}
-                        className="group w-full sm:w-auto px-10 md:px-14 py-4 min-h-[52px] md:min-h-[56px] bg-gradient-to-r from-accent to-[#0088cc] text-white font-black rounded-xl shadow-[0_0_30px_rgba(0,198,255,0.5)] hover:shadow-[0_0_40px_rgba(0,198,255,0.8)] transition-all duration-300 active:scale-[0.96] flex items-center justify-center gap-2 uppercase tracking-wider text-[14px] sm:text-[15px]"
+                        className="group w-full sm:w-auto px-10 md:px-14 py-3.5 min-h-[48px] md:min-h-[56px] bg-gradient-to-r from-accent to-[#0088cc] text-white font-black rounded-xl shadow-[0_0_30px_rgba(0,198,255,0.5)] hover:shadow-[0_0_40px_rgba(0,198,255,0.8)] transition-all duration-300 active:scale-[0.96] flex items-center justify-center gap-2 uppercase tracking-wider text-[13px] sm:text-[15px]"
                     >
                         Book Free Trial
                         <FaPlay className="text-[10px] group-hover:translate-x-1 transition-transform duration-300" />
@@ -86,7 +86,7 @@ export default function Hero() {
                 </motion.div>
 
                 {/* Space maintained for TrustBar below */}
-                <div className="pb-12 md:pb-0" />
+                <div className="pb-8 md:pb-0" />
             </div>
 
             {/* Scroll indicator */}
