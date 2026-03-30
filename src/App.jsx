@@ -32,13 +32,13 @@ const FinalCTA = () => (
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-accent/[0.03] rounded-full blur-[100px] pointer-events-none" />
         
         <div className="relative z-10 text-center max-w-3xl mx-auto px-4 sm:px-6">
-            <h2 className="font-montserrat font-black text-4xl sm:text-4xl md:text-5xl mb-4 tracking-tight drop-shadow-lg">
+            <h2 className="font-montserrat font-black text-[1.75rem] sm:text-4xl md:text-5xl mb-4 tracking-tight drop-shadow-lg leading-tight">
                 Ready to <span className="text-accent drop-shadow-[0_0_15px_rgba(0,198,255,0.4)]">Transform</span> Your Body?
             </h2>
             <p className="text-text-muted text-base sm:text-lg mb-8 font-light max-w-xl mx-auto hidden md:block">
                 No matter your starting point, TRIFIT is built for your journey. Join today and start with expert guidance.
             </p>
-            <p className="text-text-muted text-[15px] mb-8 font-light max-w-xl mx-auto md:hidden">
+            <p className="text-text-muted text-[14px] mb-6 font-light max-w-xl mx-auto md:hidden leading-relaxed">
                 Join today and start your journey.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center mb-8 md:mb-10 w-full max-w-xs sm:max-w-none mx-auto">
@@ -47,7 +47,7 @@ const FinalCTA = () => (
                         document.querySelector('#pricing')?.scrollIntoView({ behavior: 'smooth' });
                         trackLeadEvent('free_trial_click', { location: 'final_cta' });
                     }}
-                    className="w-full sm:w-auto px-10 py-4 min-h-[52px] md:min-h-[44px] bg-gradient-to-r from-[#00C6FF] to-[#0072ff] text-white font-black rounded-xl shadow-[0_0_20px_rgba(0,198,255,0.4)] hover:shadow-[0_0_35px_rgba(0,198,255,0.8)] transition-all duration-300 active:scale-[0.96] uppercase tracking-wider text-[14px] md:text-[13px] leading-none"
+                    className="w-full sm:w-auto px-10 py-3.5 min-h-[48px] md:min-h-[44px] bg-gradient-to-r from-[#00C6FF] to-[#0072ff] text-white font-black rounded-xl shadow-[0_0_20px_rgba(0,198,255,0.4)] hover:shadow-[0_0_35px_rgba(0,198,255,0.8)] transition-all duration-300 active:scale-[0.96] uppercase tracking-wider text-[13px] md:text-[13px] leading-none"
                 >
                     Book Free Trial
                 </button>

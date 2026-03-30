@@ -36,7 +36,7 @@ export default function Contact() {
                     <p className="max-w-2xl mx-auto text-text-muted text-base lg:text-lg font-light mb-3">
                         Proudly serving Wagholi and nearby areas. Visit us or reach out — we&apos;d love to help you start your fitness journey.
                     </p>
-                    <p className="font-montserrat font-bold text-accent text-lg sm:text-xl tracking-tight">
+                    <p className="font-montserrat font-bold text-accent text-base sm:text-xl tracking-tight leading-snug">
                         Call Now &amp; Start Your Fitness Journey Today
                     </p>
                 </motion.div>
