@@ -34,7 +34,7 @@ export default function Footer() {
                         <p className="text-[#00C6FF] font-bold text-sm mb-2 uppercase tracking-wide">
                             Best Gym in Wagholi, Pune
                         </p>
-                        <p className="text-text-dim text-[13px] leading-[1.8] max-w-md mb-7 font-light">
+                        <p className="text-text-dim text-[12px] md:text-[13px] leading-[1.75] max-w-md mb-5 md:mb-7 font-light">
                             Wagholi&apos;s premier fitness destination. We combine world-class
                             equipment, expert trainers, and a motivating community to help you
                             achieve your fitness goals.
@@ -57,7 +57,7 @@ export default function Footer() {
 
                     {/* Quick Links */}
                     <div>
-                        <h4 className="font-montserrat font-bold text-[11px] uppercase tracking-[0.2em] mb-7 text-text">
+                        <h4 className="font-montserrat font-bold text-[11px] uppercase tracking-[0.2em] mb-5 md:mb-7 text-text">
                             Quick Links
                         </h4>
                         <ul className="space-y-3.5">
@@ -76,7 +76,7 @@ export default function Footer() {
 
                     {/* Contact */}
                     <div>
-                        <h4 className="font-montserrat font-bold text-[11px] uppercase tracking-[0.2em] mb-7 text-text">
+                        <h4 className="font-montserrat font-bold text-[11px] uppercase tracking-[0.2em] mb-5 md:mb-7 text-text">
                             Contact Info
                         </h4>
                         <ul className="space-y-4 text-text-dim text-[13px] font-light">
@@ -106,7 +106,7 @@ export default function Footer() {
 
             {/* Bottom bar */}
             <div className="border-t border-border/60">
-                <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 py-7 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 md:py-7 flex flex-col sm:flex-row items-center justify-between gap-3 md:gap-4">
                     <p className="text-text-dim text-[11px] text-center sm:text-left tracking-wide">
                         © {new Date().getFullYear()} TRIFIT Fitness Centre. All rights reserved.
                     </p>

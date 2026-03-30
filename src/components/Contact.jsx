@@ -33,7 +33,7 @@ export default function Contact() {
                     <h2 className="font-montserrat font-extrabold text-[1.375rem] sm:text-3xl md:text-4xl lg:text-[3.25rem] mt-2 mb-3 md:mt-5 md:mb-7 leading-tight tracking-tight">
                         Visit <span className="gradient-text">TRIFIT</span> in Wagholi
                     </h2>
-                    <p className="max-w-2xl mx-auto text-text-muted text-base lg:text-lg font-light mb-3">
+                    <p className="max-w-2xl mx-auto text-text-muted text-sm sm:text-base lg:text-lg font-light mb-2 md:mb-3 leading-relaxed">
                         Proudly serving Wagholi and nearby areas. Visit us or reach out — we&apos;d love to help you start your fitness journey.
                     </p>
                     <p className="font-montserrat font-bold text-accent text-base sm:text-xl tracking-tight leading-snug">
@@ -64,7 +64,7 @@ export default function Contact() {
                                         <p className="text-text-dim text-[10px] font-bold uppercase tracking-[0.2em] mb-1">
                                             {item.title}
                                         </p>
-                                        <p className="font-semibold text-[14px] tracking-tight">{item.value}</p>
+                                        <p className="font-semibold text-[13px] md:text-[14px] tracking-tight">{item.value}</p>
                                     </div>
                                 </Wrapper>
                             )
@@ -72,7 +72,7 @@ export default function Contact() {
 
                         {/* CTA */}
                         <div className="bg-white/5 backdrop-blur rounded-xl p-4 mt-5 md:mt-8 text-center border border-white/10">
-                            <p className="font-montserrat font-bold text-[15px] sm:text-base mb-3 tracking-tight text-white">
+                            <p className="font-montserrat font-bold text-[14px] sm:text-base mb-3 tracking-tight text-white">
                                 Ready to Start Your Transformation?
                             </p>
                             <div className="flex flex-col sm:flex-row gap-3 justify-center">

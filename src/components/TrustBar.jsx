@@ -22,7 +22,7 @@ export default function TrustBar() {
                                     <span className="text-white font-semibold leading-tight">
                                         {f.text}
                                     </span>
-                                    <span className="text-sm text-gray-400 leading-tight mt-0.5">{f.desc}</span>
+                                    <span className="text-xs sm:text-sm text-gray-400 leading-tight mt-0.5">{f.desc}</span>
                                 </div>
                             </div>
                         )
