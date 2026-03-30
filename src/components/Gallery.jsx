@@ -39,7 +39,7 @@ export default function Gallery() {
                     initial={{ opacity: 0 }}
                     animate={inView ? { opacity: 1 } : {}}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 auto-rows-[180px] md:auto-rows-[280px]"
+                    className="grid grid-cols-2 lg:grid-cols-3 gap-2.5 md:gap-4 auto-rows-[160px] md:auto-rows-[280px]"
                 >
                     {images.map((img, i) => (
                         <motion.div

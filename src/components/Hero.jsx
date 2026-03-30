@@ -18,7 +18,7 @@ export default function Hero() {
                 <motion.img
                     src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80"
                     alt="TRIFIT Fitness Centre Interior"
-                    className="w-full h-full object-cover origin-center"
+                    className="w-full h-full min-h-full object-cover origin-center"
                     animate={{ scale: [1.02, 1.06, 1.02] }}
                     transition={{ duration: 25, repeat: Infinity, ease: 'easeInOut' }}
                 />

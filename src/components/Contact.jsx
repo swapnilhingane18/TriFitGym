@@ -108,7 +108,7 @@ export default function Contact() {
                         <div className="rounded-2xl overflow-hidden border border-border shadow-2xl shadow-black/40">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.4839876678334!2d73.99713761077197!3d18.583631082449283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1565d3fe463%3A0x15f74a3d7c3de183!2sTrifit%20-%20The%20Best%20Gym%20in%20Wagholi%20for%20Fitness%2C%20Strength%20Training%2C%20Cardio%2C%20and%20Overall%20Wellness!5e1!3m2!1sen!2sin!4v1774027327857!5m2!1sen!2sin"
-                                className="w-full h-[250px] sm:h-[400px] md:h-[450px]"
+                                className="w-full h-[200px] sm:h-[400px] md:h-[450px]"
                                 style={{ border: 0 }}
                                 allowFullScreen=""
                                 loading="lazy"

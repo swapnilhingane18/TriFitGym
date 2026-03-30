@@ -10,7 +10,7 @@ export default function WhatsAppButton() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackLeadEvent('whatsapp_click', { location: 'floating_widget' })}
-            className="fixed bottom-20 md:bottom-8 right-5 md:right-8 z-[50] group"
+            className="fixed bottom-24 md:bottom-8 right-4 md:right-8 z-[50] group"
             aria-label="Chat on WhatsApp"
         >
             <div className="relative">
