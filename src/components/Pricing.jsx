@@ -76,10 +76,10 @@ export default function Pricing() {
                     <h2 className="font-montserrat font-extrabold text-[1.375rem] sm:text-3xl md:text-4xl lg:text-[3.25rem] mt-2 mb-3 md:mt-5 md:mb-7 leading-tight tracking-tight">
                         Membership <span className="gradient-text">Plans</span>
                     </h2>
-                    <p className="max-w-2xl mx-auto text-text-muted text-base lg:text-lg font-light mb-6">
+                    <p className="max-w-2xl mx-auto text-text-muted text-sm sm:text-base lg:text-lg font-light mb-4 md:mb-6 leading-relaxed">
                         Flexible plans designed to fit your lifestyle. Perfect for beginners and advanced members alike.
                     </p>
-                    <div className="inline-block px-5 py-2 bg-accent/10 border border-accent/20 rounded-full text-[#00C6FF] text-[13px] font-bold tracking-wide animate-pulse shadow-[0_0_15px_rgba(0,198,255,0.15)]">
+                    <div className="inline-block px-4 py-1.5 md:px-5 md:py-2 bg-accent/10 border border-accent/20 rounded-full text-[#00C6FF] text-[12px] md:text-[13px] font-bold tracking-wide animate-pulse shadow-[0_0_15px_rgba(0,198,255,0.15)]">
                         ⚡ Limited time offer for new members
                     </div>
                 </motion.div>
@@ -97,7 +97,7 @@ export default function Pricing() {
                         >
                             {/* Popular badge */}
                             {plan.popular && (
-                                <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-5 py-1.5 bg-gradient-to-r from-[#FACC15] to-[#EAB308] rounded-full text-black font-black uppercase tracking-[0.2em] flex items-center gap-1.5 shadow-[0_0_20px_rgba(250,204,21,0.4)] whitespace-nowrap">
+                                <div className="absolute -top-3 md:-top-4 left-1/2 -translate-x-1/2 px-4 py-1 md:px-5 md:py-1.5 bg-gradient-to-r from-[#FACC15] to-[#EAB308] rounded-full text-black font-black uppercase tracking-[0.2em] flex items-center gap-1.5 shadow-[0_0_20px_rgba(250,204,21,0.4)] whitespace-nowrap text-[10px] md:text-xs">
                                     <FaCrown className="text-black text-[12px]" />
                                     MOST POPULAR
                                 </div>
@@ -134,7 +134,7 @@ export default function Pricing() {
                                 Start Your Transformation
                             </button>
                             {/* Reassurance */}
-                            <p className="text-center text-text-dim text-[10px] mt-4 uppercase tracking-[0.15em] font-medium">
+                            <p className="text-center text-text-dim text-[9px] md:text-[10px] mt-3 md:mt-4 uppercase tracking-[0.15em] font-medium">
                                 No long-term commitment &bull; Cancel anytime
                             </p>
                         </motion.div>

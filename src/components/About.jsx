@@ -48,13 +48,13 @@ export default function About() {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={inView ? { opacity: 1, y: 0 } : {}}
                                 transition={{ duration: 0.4, delay: 0.2 + idx * 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
-                                className="group flex items-center gap-4 text-left bg-white/5 backdrop-blur-2xl border border-white/[0.05] rounded-xl p-4 md:p-5 shadow-[0_0_25px_rgba(0,198,255,0.07)] transition-all duration-300 hover:-translate-y-1 hover:bg-white/10"
+                                className="group flex items-center gap-3.5 md:gap-4 text-left bg-white/5 backdrop-blur-2xl border border-white/[0.05] rounded-xl p-3.5 md:p-5 shadow-[0_0_25px_rgba(0,198,255,0.07)] transition-all duration-300 hover:-translate-y-1 hover:bg-white/10"
                             >
                                 <div className="w-10 h-10 flex items-center justify-center rounded-full bg-[#00C6FF]/10 shrink-0">
                                     <feat.icon className="w-5 h-5 text-[#00C6FF]" />
                                 </div>
                                 <div className="flex flex-col text-left">
-                                    <h3 className="text-white font-semibold leading-tight">{feat.title}</h3>
+                                    <h3 className="text-white font-semibold leading-tight text-[14px] md:text-base">{feat.title}</h3>
                                     <p className="text-sm text-gray-400 leading-tight mt-0.5">{feat.desc}</p>
                                 </div>
                             </motion.div>
