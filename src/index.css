@@ -59,6 +59,11 @@ html {
 
 * {
   -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+button, a {
+  touch-action: manipulation;
 }
 
 ::selection {
@@ -186,6 +191,14 @@ html {
   z-index: 0;
 }
 
+@media (max-width: 767px) {
+  .ambient-glow::after {
+    width: 80%;
+    height: 40%;
+    background: radial-gradient(ellipse, rgba(0, 198, 255, 0.02) 0%, transparent 70%);
+  }
+}
+
 /* ═══════════════════════════════════
    Loading / skeleton shimmer
    ═══════════════════════════════════ */
@@ -264,6 +277,7 @@ html, body {
 
 body {
   -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: contain;
 }
 
 /* ═══════════════════════════════════
