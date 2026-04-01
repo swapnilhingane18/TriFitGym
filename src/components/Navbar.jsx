@@ -24,6 +24,9 @@ export default function Navbar() {
         return () => window.removeEventListener('scroll', onScroll)
     }, [])
 
+    // ANALYSIS: Uses inline document.body.style.overflow to lock scroll.
+    // This approach can conflict with other components (e.g., FreeTrialPopup).
+    // Should migrate to class-based (.no-scroll) for consistency.
     // Lock body scroll when mobile menu is open
     useEffect(() => {
         if (mobileOpen) {
