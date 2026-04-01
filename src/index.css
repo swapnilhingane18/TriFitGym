@@ -66,6 +66,11 @@ button, a {
   touch-action: manipulation;
 }
 
+/* Reusable scroll lock — applied via JS to body when modals/popups are open */
+.no-scroll {
+  overflow: hidden !important;
+}
+
 ::selection {
   background: #00c6ff;
   color: #fff;
