@@ -37,7 +37,7 @@ export default function Navbar() {
     const handleClick = (e, href) => {
         e.preventDefault()
         setMobileOpen(false)
-        // Delay scroll so useEffect has time to reset body.overflow from 'hidden'
+        // Delay scroll so useEffect has time to remove no-scroll class from body
         setTimeout(() => {
             const el = document.querySelector(href)
             if (el) {

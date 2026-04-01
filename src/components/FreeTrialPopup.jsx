@@ -2,10 +2,6 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FaTimes, FaGift } from 'react-icons/fa'
 
-// NOTE: This popup currently has NO scroll lock management.
-// When isOpen=true, the body should be scroll-locked.
-// When isOpen=false, the body scroll should be restored.
-// Missing this causes scroll to break after popup dismissal.
 export default function FreeTrialPopup() {
     const [isOpen, setIsOpen] = useState(false)
     const [hasSeen, setHasSeen] = useState(false)
