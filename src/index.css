@@ -69,6 +69,8 @@ button, a {
 /* Reusable scroll lock — applied via JS to body when modals/popups are open */
 .no-scroll {
   overflow: hidden !important;
+  height: 100% !important;
+  touch-action: none;
 }
 
 ::selection {

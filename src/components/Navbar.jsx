@@ -27,11 +27,16 @@ export default function Navbar() {
     // Lock body scroll when mobile menu is open (class-based for consistency)
     useEffect(() => {
         if (mobileOpen) {
+            document.documentElement.classList.add('no-scroll')
             document.body.classList.add('no-scroll')
         } else {
+            document.documentElement.classList.remove('no-scroll')
             document.body.classList.remove('no-scroll')
         }
-        return () => { document.body.classList.remove('no-scroll') }
+        return () => {
+            document.documentElement.classList.remove('no-scroll')
+            document.body.classList.remove('no-scroll')
+        }
     }, [mobileOpen])
 
     const handleClick = (e, href) => {
