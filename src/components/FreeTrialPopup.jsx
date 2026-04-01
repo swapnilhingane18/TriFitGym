@@ -48,7 +48,12 @@ export default function FreeTrialPopup() {
     return (
         <AnimatePresence>
             {isOpen && (
-                <div className="fixed inset-0 z-[100] flex items-center justify-center px-4 sm:px-0">
+                <motion.div
+                    initial={{ opacity: 1 }}
+                    exit={{ opacity: 0, pointerEvents: 'none' }}
+                    transition={{ duration: 0.25 }}
+                    className="fixed inset-0 z-[100] flex items-center justify-center px-4 sm:px-0"
+                >
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -129,7 +134,7 @@ export default function FreeTrialPopup() {
                             )}
                         </div>
                     </motion.div>
-                </div>
+                </motion.div>
             )}
         </AnimatePresence>
     )
