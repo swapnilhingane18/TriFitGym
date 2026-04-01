@@ -25,6 +25,16 @@ export default function FreeTrialPopup() {
         return () => clearTimeout(timer)
     }, [])
 
+    // Lock body scroll when popup is open, restore when closed
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = 'hidden'
+        } else {
+            document.body.style.overflow = ''
+        }
+        return () => { document.body.style.overflow = '' }
+    }, [isOpen])
+
     const handleSubmit = (e) => {
         e.preventDefault()
         // Here you would typically send the data to your backend/CRM
